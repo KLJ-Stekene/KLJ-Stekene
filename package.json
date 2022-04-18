@@ -1,5 +1,24 @@
 {
   "name": "kljstekene",
+  "description": "De website van KLJ Stekene",
+  "homepage": "https://kljstekene.be/",
+  "author": {
+    "name": "Jens Penneman",
+    "email": "me@jenspenneman.com",
+    "url": "https://jenspenneman.com"
+  },
+  "contributors": [
+    {
+      "name": "Jens Penneman",
+      "email": "me@jenspenneman.com",
+      "url": "https://jenspenneman.com"
+    }
+  ],
+  "keywords": [
+    "KLJ",
+    "Stekene",
+    "jeugdbeweging"
+  ],
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,25 +1,63 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Stekene",
+  "name": "KLJ Stekene",
+  "description": "Wij zijn een grote groep jongeren en volwassenen die ieder jaar plezier maken",
+  "start_url": "https://kljstekene.be",
+  "url": "https://kljstekene.be",
+  "scope": "/",
+  "display": "fullscreen",
+  "orientation": "any",
+  "theme_color": "#1876d1",
+  "background_color": "#ffffff",
+  "lang": "vls",
+  "dir": "ltr",
+  "categories": [
+    "entertainment",
+    "kids",
+    "social"
+  ],
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "sizes": "256x256 128x128 64x64 48x48 40x40 32x32 24x24 20x20 16x16",
+      "type": "image/x-icon",
+      "purpose": "any"
     },
     {
-      "src": "logo192.png",
+      "src": "/img/branding/apple-touch/apple-touch-icon.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "1000x1000",
+      "purpose": "any"
     },
     {
-      "src": "logo512.png",
+      "src": "/img/branding/apple-touch/apple-touch-icon-ipad.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "152x152",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/branding/apple-touch/apple-touch-icon-ipad-retina.png",
+      "type": "image/png",
+      "sizes": "167x167",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/branding/apple-touch/apple-touch-icon-iphone.png",
+      "type": "image/png",
+      "sizes": "80x80",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/branding/apple-touch/apple-touch-icon-iphone-retina.png",
+      "type": "image/png",
+      "sizes": "180x180",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/branding/apple-touch/apple-touch-startup-image.png",
+      "type": "image/png",
+      "sizes": "320x460",
+      "purpose": "any"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
