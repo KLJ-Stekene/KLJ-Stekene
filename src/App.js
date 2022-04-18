@@ -1,11 +1,56 @@
-import {Fragment} from "react";
+import {Fragment, lazy, Suspense, useMemo} from "react";
+import {
+    Container,
+    createTheme,
+    CssBaseline,
+    LinearProgress,
+    ThemeProvider,
+    Typography,
+    useMediaQuery,
+} from "@mui/material";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+
+const Startpagina    = lazy(() => import("./containers/startpagina"));
+const Overonspagina  = lazy(() => import("./containers/overons"));
+const Bestuurpagina  = lazy(() => import("./containers/bestuur"));
+const Sponsorspagina = lazy(() => import("./containers/sponsors"));
 
 function App() {
-  return (
-      <Fragment>
+    const prefersLightMode = useMediaQuery("(prefers-color-scheme: light)");
+    const theme            = useMemo(() => createTheme({
+                                                           palette: {
+                                                               mode: prefersLightMode ? "light" : "dark",
+                                                           },
+                                                       }), [prefersLightMode]);
 
-      </Fragment>
-  );
+    return (<Fragment>
+        <ThemeProvider theme={theme}>
+            <CssBaseline />
+            {/*Navbar*/}
+            <main>
+                <BrowserRouter>
+                    <Container sx={{paddingY: 2}}>
+                        <Suspense fallback={<LinearProgress />}>
+                            <Routes>
+                                <Route path={"*"} element={<Container>
+                                    <Typography variant={"h4"} component={"h2"}>
+                                        Deze pagina lijkt verdwenen te zijn!
+                                    </Typography>
+                                </Container>} />
+                                <Route path={"/"}>
+                                    <Route index element={<Startpagina />} />
+                                    <Route path={"overons"} element={<Overonspagina />} />
+                                    <Route path={"bestuur"} element={<Bestuurpagina />} />
+                                    <Route path={"sponsors"} element={<Sponsorspagina />} />
+                                </Route>
+                            </Routes>
+                        </Suspense>
+                    </Container>
+                </BrowserRouter>
+            </main>
+            {/*Footer*/}
+        </ThemeProvider>
+    </Fragment>);
 }
 
 export default App;
