@@ -11,40 +11,11 @@ import {
 	Grid,
 	Typography,
 } from "@mui/material";
+import {gemakske as artikels} from "./../../config";
 
-import MauricesLiefdesLeven from "./../../img/gemakske/2022-02-14-maurice.png";
-import MauriceOpPasen from "./../../img/gemakske/2021-04-17-maurice.png";
 
 
 const container = memo(() => {
-	const artikels = [
-		{
-			startDate:          new Date("2022-02-14"),
-			endDate:            new Date("2022-04-14"),
-			displayedEventDate: "Valentijn '22",
-			title:              "Maurice's liefdesleven",
-			text:               "",
-			image:              MauricesLiefdesLeven,
-			size:               {
-				xs: 1,
-				sm: 2,
-				md: 2,
-			},
-		},
-		{
-			startDate:          new Date("2022-04-17"),
-			endDate:            new Date("2022-06-01"),
-			displayedEventDate: "Pasen '22",
-			title:              "Het leven van Maurice: Pasen",
-			text:               "",
-			image:              MauriceOpPasen,
-			size:               {
-				xs: 1,
-				sm: 2,
-				md: 2,
-			},
-		},
-	];
 
 	return (<Fragment>
 		<Divider sx={{marginTop: 2}}>

@@ -12,33 +12,10 @@ import {
 	Typography,
 } from "@mui/material";
 
-import IceIceBaby2022 from "./../../img/events/ice ice baby.png";
+import {nieuws as artikels} from "./../../config";
 
 
 const container = memo(() => {
-	const artikels = [
-		{
-			startDate:          new Date("2022-01-01"),
-			endDate:            new Date("2022-04-23"),
-			displayedEventDate: "",
-			title:              "",
-			text:               "",
-			image:              IceIceBaby2022,
-			links:              [
-				{
-					name:          "Facebook event",
-					displayedText: "",
-					href:          "https://fb.me/e/1Ab5M00O8",
-					disabled:      false,
-				},
-			],
-			size:               {
-				xs: 1,
-				sm: 2,
-				md: 3,
-			},
-		},
-	];
 
 	return (<Fragment>
 		<Divider sx={{marginTop: 2}}>

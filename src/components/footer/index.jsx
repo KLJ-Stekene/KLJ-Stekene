@@ -1,27 +1,9 @@
 import {Fragment, memo} from "react";
 import {Container, IconButton, Toolbar, Typography} from "@mui/material";
-import {Facebook, Instagram} from "@mui/icons-material";
-import {blue, deepOrange} from "@mui/material/colors";
+import {socialMedia} from "../../config";
 
 
 const Footer = memo(() => {
-	const socialMedia = [
-		{
-			name:     "Facebook",
-			icon:     <Facebook />,
-			color:    blue.A700,
-			disabled: false,
-			href:     "https://www.facebook.com/KljStekene/?utm_source=kljstekene.be&utm_medium=Referral",
-		},
-		{
-			name:     "Instagram",
-			icon:     <Instagram />,
-			color:    deepOrange.A400,
-			disabled: false,
-			href:     "https://instagram.com/kljstekene?utm_source=kljstekene.be&utm_medium=Referral",
-		},
-	];
-
 	return (<Fragment>
 		<Container>
 			<Toolbar disableGutters>
