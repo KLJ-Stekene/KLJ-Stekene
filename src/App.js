@@ -9,6 +9,7 @@ import {
     useMediaQuery,
 } from "@mui/material";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Navbar from "./components/navbar";
 
 const Startpagina    = lazy(() => import("./containers/startpagina"));
 const Overonspagina  = lazy(() => import("./containers/overons"));
@@ -26,9 +27,9 @@ function App() {
     return (<Fragment>
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            {/*Navbar*/}
-            <main>
-                <BrowserRouter>
+            <BrowserRouter>
+                <Navbar />
+                <main>
                     <Container sx={{paddingY: 2}}>
                         <Suspense fallback={<LinearProgress />}>
                             <Routes>
@@ -46,9 +47,9 @@ function App() {
                             </Routes>
                         </Suspense>
                     </Container>
-                </BrowserRouter>
-            </main>
-            {/*Footer*/}
+                </main>
+                {/*Footer*/}
+            </BrowserRouter>
         </ThemeProvider>
     </Fragment>);
 }
