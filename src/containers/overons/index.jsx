@@ -17,7 +17,7 @@ import {OpenInNew} from "@mui/icons-material";
 
 const Page = memo(() => {
 	return (<Fragment>
-		<Typography align={"center"} variant={"h2"} component={"h1"}>
+		<Typography align={"center"} variant={"h3"} component={"h1"}>
 			Over ons...
 		</Typography>
 		<Divider />
