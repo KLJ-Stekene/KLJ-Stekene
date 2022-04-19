@@ -20,29 +20,29 @@ import {useNavigate} from "react-router-dom";
 import {red} from "@mui/material/colors";
 
 
-const Navbar = memo(({
-						 links = [{
-							 tekst:    "startpagina",
-							 url:      "/",
-							 disabled: false,
-							 color:    "inherit",
-						 }, {
-							 tekst:    "Over ons",
-							 url:      "/overons",
-							 disabled: false,
-							 color:    "inherit",
-						 }, {
-							 tekst:    "Bestuur",
-							 url:      "/bestuur",
-							 disabled: false,
-							 color:    "inherit",
-						 }, {
-							 url:      "/sponsors",
-							 disabled: false,
-							 icon:     <Favorite />,
-							 color:    red.A400,
-						 }],
-					 }) => {
+const Navbar = memo(() => {
+	const links = [{
+		tekst:    "startpagina",
+		url:      "/",
+		disabled: false,
+		color:    "inherit",
+	}, {
+		tekst:    "Over ons",
+		url:      "/overons",
+		disabled: false,
+		color:    "inherit",
+	}, {
+		tekst:    "Bestuur",
+		url:      "/bestuur",
+		disabled: false,
+		color:    "inherit",
+	}, {
+		url:      "/sponsors",
+		disabled: false,
+		icon:     <Favorite />,
+		color:    red.A400,
+	}];
+
 	let navigate       = useNavigate();
 	const isSmartphone = useMediaQuery("only screen and (max-width:499px)");
 

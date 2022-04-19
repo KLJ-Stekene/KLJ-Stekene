@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 const Startpagina    = lazy(() => import("./containers/startpagina"));
 const Overonspagina  = lazy(() => import("./containers/overons"));
@@ -48,7 +49,7 @@ function App() {
                         </Suspense>
                     </Container>
                 </main>
-                {/*Footer*/}
+                <Footer />
             </BrowserRouter>
         </ThemeProvider>
     </Fragment>);
