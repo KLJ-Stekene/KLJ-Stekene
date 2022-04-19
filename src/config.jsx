@@ -32,6 +32,29 @@ import RubenStuer from "./img/bestuur/rubenstuer/face.jpeg";
 import YenteDeVuyst from "./img/bestuur/yentedevuyst/face.jpeg";
 import YoranSelis from "./img/bestuur/yoranselis/face.jpeg";
 import Plus20Bestuur from "./img/bestuur/plus20/JonasJarno.jpeg";
+import Sportfeest19Foto from "./img/events/2019Sportfeest.jpg";
+import Sportfeest21Foto from "./img/events/2021Sportfeest.jpg";
+import Bestuursfoto2021 from "./img/events/2021Bestuursweekend.jpg";
+import WeekendGroepsfoto2022 from "./img/events/2022Weekend.JPEG";
+
+const startpaginaFotos = [
+	{
+		image: Sportfeest19Foto,
+		alt:   "",
+	},
+	{
+		image: Sportfeest21Foto,
+		alt:   "",
+	},
+	{
+		image: Bestuursfoto2021,
+		alt:   "",
+	},
+	{
+		image: WeekendGroepsfoto2022,
+		alt:   "",
+	},
+];
 
 const links = [{
 	tekst:    "startpagina",
@@ -746,4 +769,4 @@ const bestuur = [
 	},
 ];
 
-export {links, socialMedia, nieuws, gemakske, infoAboutUs, bestuur};
+export {startpaginaFotos, links, socialMedia, nieuws, gemakske, infoAboutUs, bestuur};
