@@ -15,8 +15,25 @@ import {
 } from "@mui/icons-material";
 import {blue, deepOrange, red} from "@mui/material/colors";
 import {CardMedia} from "@mui/material";
+import AmberVanMoeseke from "./img/bestuur/ambervanmoeseke/face.jpeg";
+import AnoukLaureys from "./img/bestuur/anouklaureys/face.jpeg";
+import EwaldTindemans from "./img/bestuur/ewaldtindemans/face.jpeg";
+import FeniksVanVooren from "./img/bestuur/feniksvanvooren/face.jpeg";
+import JarnoSchepens from "./img/bestuur/jarnoschepens/face.jpeg";
+import JasmijnSchelfhout from "./img/bestuur/jasmijnschelfhout/face.jpeg";
+import JensPenneman from "./img/bestuur/jenspenneman/face.jpeg";
+import KatoSelis from "./img/bestuur/katoselis/face.jpeg";
+import LotteJacobs from "./img/bestuur/lottejacobs/face.jpeg";
+import MaartenVanGoey from "./img/bestuur/maartenvangoey/face.jpg";
+import MerelVanWiele from "./img/bestuur/merelvanwiele/face.jpeg";
+import NinaSelis from "./img/bestuur/ninaselis/face.jpeg";
+import OnnoVanAken from "./img/bestuur/onnovanaken/face.jpeg";
+import RubenStuer from "./img/bestuur/rubenstuer/face.jpeg";
+import YenteDeVuyst from "./img/bestuur/yentedevuyst/face.jpeg";
+import YoranSelis from "./img/bestuur/yoranselis/face.jpeg";
+import Plus20Bestuur from "./img/bestuur/plus20/JonasJarno.jpeg";
 
-const links       = [{
+const links = [{
 	tekst:    "startpagina",
 	url:      "/",
 	disabled: false,
@@ -224,4 +241,509 @@ const infoAboutUs = [
 	},
 ];
 
-export {links, socialMedia, nieuws, gemakske, infoAboutUs};
+
+const bestuurstaken = [
+	{//0
+		name: "Jeugdraadslid",
+	},
+	{//1
+		name: "Foto-verantwoordelijke",
+	},
+	{//2
+		name: "Sportfeestverantwoordelijke",
+	},
+	{//3
+		name: "Verjaardags- en prikbordverantwoordelijke",
+	},
+	{//4
+		name: "EHBO-verantwoordelijke",
+	},
+	{//5
+		name: "kassier",
+	},
+	{//6
+		name: "Gewestraadslid",
+	},
+	{//7
+		name: "Redactie 't Gemakske",
+	},
+	{//8
+		name: "Websiteverantwoordelijke",
+	},
+	{//9
+		name: "Archivaris & dropboxverantwoordelijke",
+	},
+	{//10
+		name: "Kamp- en weekendverantwoordelijke",
+	},
+	{//11
+		name: "Bestuursanimatieverantwoordelijke",
+	},
+	{//12
+		name: "Kledijverantwoordelijke",
+	},
+	{//13
+		name: "K-verantwoordelijke",
+	},
+	{//14
+		name: "Technische dienst",
+	},
+	{//15
+		name: "PR-verantwoordelijke",
+	},
+	{//16
+		name: "Drankverantwoordelijke",
+	},
+	{//17
+		name: "Secretaris",
+	},
+	{//18
+		name: "Materiaalverantwoordelijke",
+	},
+	{//19
+		name: "Lokaalverhuurverantwoordelijke",
+	},
+];
+
+const bestuur = [
+	{
+		firstName:      "Jarno",
+		lastName:       "Schepens",
+		img:            {
+			image: JarnoSchepens,
+			alt:   "Portret van Jarno",
+		},
+		isHoofdbestuur: true,
+		isNew:          false,
+		taken:          [
+			bestuurstaken[0].name,
+			bestuurstaken[1].name,
+		],
+		mail:           "jarno.schepens@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/profile.php?id=100009181375563",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/jarnoschepens/",
+			},
+		],
+	},
+	{
+		firstName:      "Nina",
+		lastName:       "Selis",
+		img:            {
+			image: NinaSelis,
+			alt:   "Portret van Nina",
+		},
+		isHoofdbestuur: true,
+		isNew:          false,
+		taken:          [
+			bestuurstaken[0].name,
+		],
+		mail:           "nina.selis@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/nina.selis",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/ninaselis/",
+			},
+		],
+	},
+	{
+		firstName:      "Amber",
+		lastName:       "Van Moeseke",
+		img:            {
+			image: AmberVanMoeseke,
+			alt:   "Portret van Amber",
+		},
+		isHoofdbestuur: false,
+		isNew:          true,
+		taken:          [
+			bestuurstaken[2].name,
+			bestuurstaken[3].name,
+		],
+		mail:           "amber.van.moeseke@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/amber.vanmoeseke",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/amber_vm_/",
+			},
+		],
+	},
+	{
+		firstName:      "Anouk",
+		lastName:       "Laureys",
+		img:            {
+			image: AnoukLaureys,
+			alt:   "Portret van Anouk",
+		},
+		isHoofdbestuur: false,
+		isNew:          false,
+		taken:          [
+			bestuurstaken[2].name,
+			bestuurstaken[4].name,
+			bestuurstaken[5].name,
+		],
+		mail:           "anouk.laureys@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/anouk.laureys",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/anouk_laureys/",
+			},
+		],
+	},
+	{
+		firstName:      "Ewald",
+		lastName:       "Tindemans",
+		img:            {
+			image: EwaldTindemans,
+			alt:   "Portret van Ewald",
+		},
+		isHoofdbestuur: false,
+		isNew:          false,
+		taken:          [
+			bestuurstaken[2].name,
+			bestuurstaken[6].name,
+		],
+		mail:           "ewald.tindemans@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/ewald.tindemans",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/ewaldtindemans/",
+			},
+		],
+	},
+	{
+		firstName:      "Feniks",
+		lastName:       "Van Vooren",
+		img:            {
+			image: FeniksVanVooren,
+			alt:   "Portret van Feniks",
+		},
+		isHoofdbestuur: false,
+		isNew:          true,
+		taken:          [
+			bestuurstaken[2].name,
+			bestuurstaken[6].name,
+			bestuurstaken[7].name,
+		],
+		mail:           "feniks.van.vooren@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/feniks.vanvooren.940",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/feniks_v_v/",
+			},
+		],
+	},
+	{
+		firstName:      "Jasmijn",
+		lastName:       "Schelfhout",
+		img:            {
+			image: JasmijnSchelfhout,
+			alt:   "Portret van Jasmijn",
+		},
+		isHoofdbestuur: false,
+		isNew:          false,
+		taken:          [
+			bestuurstaken[4].name,
+			bestuurstaken[5].name,
+		],
+		mail:           "jasmijn.schelfhout@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/jasmijn.schelfhout",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/jasmijn.sch/",
+			},
+		],
+	},
+	{
+		firstName:      "Jens",
+		lastName:       "Penneman",
+		img:            {
+			image: JensPenneman,
+			alt:   "Portret van Jens",
+		},
+		isHoofdbestuur: false,
+		isNew:          false,
+		taken:          [
+			bestuurstaken[8].name,
+			bestuurstaken[9].name,
+			bestuurstaken[1].name,
+		],
+		mail:           "jens.penneman@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/PennemanJens",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/jens.penneman/",
+			},
+		],
+	},
+	{
+		firstName:      "Kato",
+		lastName:       "Selis",
+		img:            {
+			image: KatoSelis,
+			alt:   "Portret van Kato",
+		},
+		isHoofdbestuur: false,
+		isNew:          false,
+		taken:          [
+			bestuurstaken[10].name,
+			bestuurstaken[11].name,
+		],
+		mail:           "kato.selis@kljstekene.be",
+	},
+	{
+		firstName:      "Lotte",
+		lastName:       "Jacobs",
+		img:            {
+			image: LotteJacobs,
+			alt:   "Portret van Lotte",
+		},
+		isHoofdbestuur: false,
+		isNew:          true,
+		taken:          [
+			bestuurstaken[2].name,
+			bestuurstaken[12].name,
+			bestuurstaken[13].name,
+		],
+		mail:           "lotte.jacobs@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/lotte.jacobs.982",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/lotteke.jacobs/",
+			},
+		],
+	},
+	{
+		firstName:      "Maarten",
+		lastName:       "Van Goey",
+		img:            {
+			image: MaartenVanGoey,
+			alt:   "Portret van Maarten",
+		},
+		isHoofdbestuur: false,
+		isNew:          false,
+		taken:          [
+			bestuurstaken[14].name,
+			bestuurstaken[15].name,
+			bestuurstaken[16].name,
+		],
+		mail:           "maarten.van.goey@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/maarten.vangoey.5",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/maarten__vg/",
+			},
+		],
+	},
+	{
+		firstName:      "Merel",
+		lastName:       "Van Wiele",
+		img:            {
+			image: MerelVanWiele,
+			alt:   "Portret van Merel",
+		},
+		isHoofdbestuur: false,
+		isNew:          false,
+		taken:          [
+			bestuurstaken[3].name,
+			bestuurstaken[15].name,
+		],
+		mail:           "merel.van.wiele@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/merel.vanwiele",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/merel_van_wiele/",
+			},
+		],
+	},
+	{
+		firstName:      "Onno",
+		lastName:       "Van Aken",
+		img:            {
+			image: OnnoVanAken,
+			alt:   "Portret van Onno",
+		},
+		isHoofdbestuur: false,
+		isNew:          false,
+		taken:          [
+			bestuurstaken[7].name,
+			bestuurstaken[11].name,
+		],
+		mail:           "onno.van.aken@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/profile.php?id=100006627735364",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/onno.van.aken/",
+			},
+		],
+	},
+	{
+		firstName:      "Ruben",
+		lastName:       "Stuer",
+		img:            {
+			image: RubenStuer,
+			alt:   "Portret van Ruben",
+		},
+		isHoofdbestuur: false,
+		isNew:          false,
+		taken:          [
+			bestuurstaken[2].name,
+			bestuurstaken[14].name,
+		],
+		mail:           "ruben.stuer@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/profile.php?id=100009367214327",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/stuerruben/",
+			},
+		],
+	},
+	{
+		firstName:      "Yente",
+		lastName:       "De Vuyst",
+		img:            {
+			image: YenteDeVuyst,
+			alt:   "Portret van Yente",
+		},
+		isHoofdbestuur: false,
+		isNew:          false,
+		taken:          [
+			bestuurstaken[10].name,
+			bestuurstaken[11].name,
+			bestuurstaken[17].name,
+		],
+		mail:           "yente.de.vuyst@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/yente.devuyst",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/yentedevuyst/",
+			},
+		],
+	},
+	{
+		firstName:      "Yoran",
+		lastName:       "Selis",
+		img:            {
+			image: YoranSelis,
+			alt:   "Portret van Yoran",
+		},
+		isHoofdbestuur: false,
+		isNew:          false,
+		taken:          [
+			bestuurstaken[2].name,
+			bestuurstaken[16].name,
+			bestuurstaken[18].name,
+			bestuurstaken[19].name,
+		],
+		mail:           "yoran.selis@kljstekene.be",
+		socialMedia:    [
+			{
+				name: "Facebook",
+				icon: <Facebook />,
+				href: "https://www.facebook.com/profile.php?id=100008256488127",
+			},
+			{
+				name: "Instagram",
+				icon: <Instagram />,
+				href: "https://www.instagram.com/yoranselis/",
+			},
+		],
+	},
+	{
+		firstName:      "+20",
+		lastName:       "bestuur",
+		img:            {
+			image: Plus20Bestuur,
+			alt:   "Foto van Jarno en Jonas",
+		},
+		isHoofdbestuur: false,
+		isNew:          false,
+		mail:           "plus20@kljstekene.be",
+	},
+];
+
+export {links, socialMedia, nieuws, gemakske, infoAboutUs, bestuur};
