@@ -26,7 +26,7 @@ const Footer = memo(() => {
 		<Container>
 			<Toolbar disableGutters>
 				<Typography component={"span"} variant={"caption"} noWrap sx={{flexGrow: 1}}>
-					&copy; KLJ Stekene
+					&copy; KLJ Stekene 2022
 				</Typography>
 				{
 					socialMedia.map(link => {
