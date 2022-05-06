@@ -40,19 +40,19 @@ import WeekendGroepsfoto2022 from "./img/events/2022Weekend.JPEG";
 const startpaginaFotos = [
 	{
 		image: Sportfeest19Foto,
-		alt:   "",
+		alt:   "Sportfeest 2019",
 	},
 	{
 		image: Sportfeest21Foto,
-		alt:   "",
+		alt:   "Sportfeest 2021",
 	},
 	{
 		image: Bestuursfoto2021,
-		alt:   "",
+		alt:   "Bestuur 2021",
 	},
 	{
 		image: WeekendGroepsfoto2022,
-		alt:   "",
+		alt:   "Weekend 2022",
 	},
 ];
 
