@@ -208,7 +208,7 @@ const infoAboutUs = [
 		},
 		specialContent: <CardMedia component={"iframe"}
 								   loading={"lazy"}
-								   allowfullscreen
+								   allowFullScreen
 								   sx={{
 									   border: 0,
 									   height: "45vh",
