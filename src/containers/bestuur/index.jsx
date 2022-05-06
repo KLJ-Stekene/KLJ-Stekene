@@ -1,7 +1,7 @@
 import {Fragment, memo} from "react";
 import {Avatar, AvatarGroup, Divider, Grid, Typography} from "@mui/material";
 import {bestuur} from "../../config";
-import {Bestuurscard} from "../../components/bestuur/";
+import {Bestuurscard} from "../../components";
 
 
 const Page = memo(() => {

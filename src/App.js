@@ -1,16 +1,7 @@
 import {Fragment, lazy, Suspense, useMemo} from "react";
-import {
-    Container,
-    createTheme,
-    CssBaseline,
-    LinearProgress,
-    ThemeProvider,
-    Typography,
-    useMediaQuery,
-} from "@mui/material";
+import {Container, createTheme, CssBaseline, LinearProgress, ThemeProvider, Typography, useMediaQuery} from "@mui/material";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import {Navbar, Footer} from "./components";
 
 const Startpagina    = lazy(() => import("./containers/startpagina"));
 const Overonspagina  = lazy(() => import("./containers/overons"));

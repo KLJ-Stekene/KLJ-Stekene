@@ -1,23 +1,8 @@
 import {Fragment, memo, useCallback, useState} from "react";
-import {
-	Card,
-	CardActions,
-	CardContent,
-	CardMedia,
-	Collapse,
-	Divider,
-	IconButton,
-	List,
-	ListItem,
-	ListItemButton,
-	ListItemText,
-	ListSubheader,
-	Stack,
-	Typography,
-} from "@mui/material";
+import {Card, CardActions, CardContent, CardMedia, Collapse, Divider, IconButton, List, ListItem, ListItemButton, ListItemText, ListSubheader, Stack, Typography} from "@mui/material";
 import {ExpandLess, ExpandMore, Mail} from "@mui/icons-material";
 
-const Bestuurscard = memo(({
+const bestuurscard = memo(({
 							   firstName = "",
 							   lastName = "",
 							   isHoofdbestuur = false,
@@ -106,4 +91,4 @@ const Bestuurscard = memo(({
 	</Card>);
 });
 
-export default Bestuurscard;
+export default bestuurscard;
