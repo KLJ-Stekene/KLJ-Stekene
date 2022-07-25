@@ -1,10 +1,13 @@
 import IceIceBaby2022 from "./img/events/ice ice baby.png";
-import HastaBanana2022 from "./img/events/2022HastaBanana.jpg";
+import HastaBanana2022 from "./img/events/2022HastaBananaFlyer.png";
 import MauricesLiefdesLeven from "./img/gemakske/2022-02-14-maurice.png";
 import MauriceOpPasen from "./img/gemakske/2021-04-17-maurice.png";
+import MauriceInDeZomer from "./img/gemakske/2022-06-01-Maurice.png";
+
 import {Add, CalendarToday, Directions, Facebook, Favorite, HouseSiding, Instagram, LocationOn, People, QuestionMark} from "@mui/icons-material";
 import {blue, deepOrange, red} from "@mui/material/colors";
 import {CardMedia} from "@mui/material";
+
 import AmberVanMoeseke from "./img/bestuur/ambervanmoeseke/face.jpeg";
 import AnoukLaureys from "./img/bestuur/anouklaureys/face.jpeg";
 import EwaldTindemans from "./img/bestuur/ewaldtindemans/face.jpeg";
@@ -111,7 +114,18 @@ const gemakske = [{
     size:               {
         xs: 1, sm: 2, md: 2,
     },
-}];
+},
+    {
+        startDate:          new Date("2022-06-01"),
+        endDate:            new Date("2022-08-28"),
+        displayedEventDate: "Zomer '22",
+        title:              "Het leven van Maurice in de zomer",
+        text:               "",
+        image:              MauriceInDeZomer,
+        size:               {
+            xs: 1, sm: 2, md: 2,
+        },
+    }];
 
 
 const infoAboutUs = [{
