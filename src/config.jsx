@@ -1,5 +1,6 @@
 import IceIceBaby2022 from "./img/events/ice ice baby.png";
 import HastaBanana2022 from "./img/events/2022HastaBananaFlyer.png";
+import HastaBanana2022Profile from "./img/events/2022HastaBananaProfile.png";
 import MauricesLiefdesLeven from "./img/gemakske/2022-02-14-maurice.png";
 import MauriceOpPasen from "./img/gemakske/2021-04-17-maurice.png";
 import MauriceInDeZomer from "./img/gemakske/2022-06-01-Maurice.png";
@@ -48,6 +49,10 @@ const links = [{
     tekst: "Bestuur", url: "/bestuur", disabled: false, color: "inherit",
 }, {
     url: "/sponsors", disabled: false, icon: <Favorite/>, color: red.A400,
+}, {
+    url:      "/hastabanana",
+    disabled: false,
+    icon:     <img src={HastaBanana2022Profile} alt={"Hasta Bañana"} height={"25px"} style={{borderRadius: "50%"}}/>,
 }];
 const socialMedia = [{
     name:     "Facebook",
@@ -71,7 +76,7 @@ const nieuws = [{
     title:              "",
     text:               "",
     image:              IceIceBaby2022,
-    links:              [{
+    hrefs: [{
         name: "Facebook event", displayedText: "", href: "https://fb.me/e/1Ab5M00O8", disabled: false,
     }],
     size:               {
@@ -84,6 +89,11 @@ const nieuws = [{
     title:              "",
     text:               "",
     image:              HastaBanana2022,
+    hrefs:              [{
+        name: "Ticket pagina", displayedText: "Tickets", href: "https://shop.kljstekene.be/Tickets/", disabled: false,
+    }, {
+        name: "Facebook event", displayedText: "Facebook", href: "https://fb.me/e/1nzCN8mTy", disabled: false,
+    }],
     links:              [{
         name: "Ticket pagina", displayedText: "Tickets", href: "https://shop.kljstekene.be/Tickets/", disabled: false,
     }, {

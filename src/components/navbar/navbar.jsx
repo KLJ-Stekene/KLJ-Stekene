@@ -6,8 +6,8 @@ import {links} from "../../config";
 
 
 const navbar = memo(() => {
-	let navigate       = useNavigate();
-	const isSmartphone = useMediaQuery("only screen and (max-width:499px)");
+	let navigate = useNavigate();
+	const isSmartphone = useMediaQuery("only screen and (max-width:530px)");
 
 	const [isOpenedNavDrawer, setOpenedNavDrawer] = useState(false);
 	const toggleNavDrawer                         = useCallback(() => {

@@ -26,21 +26,31 @@ const container = memo(() => {
 						return (<Grid item {...article.size} key={article.title}>
 							<Card>
 								{article.title &&
-								 <CardHeader title={article.title} subheader={article.displayedEventDate} />}
-								{article.links?.length === 1 ? <CardActionArea href={article.links[0].href}
+									<CardHeader title={article.title} subheader={article.displayedEventDate}/>}
+								{article.hrefs?.length === 1 ? <CardActionArea href={article.hrefs[0].href}
 																			   target={"_blank"}
-																			   disabled={article.links[0].disabled}>
-									{article.image && <CardMedia component={"img"} src={article.image} alt={""} />}
+																			   disabled={article.hrefs[0].disabled}>
+									{article.image && <CardMedia component={"img"} src={article.image} alt={""}/>}
 								</CardActionArea> : article.image && <CardMedia component={"img"}
 																				src={article.image}
-																				alt={""} />}
+																				alt={""}/>}
 								{article.text && <CardContent>
 									<Typography component={"span"} variant={"body1"}>
 										{article.text}
 									</Typography>
 								</CardContent>}
-								{article.links && article.links[0].displayedText && <CardActions>
-									{article.links.map(link => {
+								{article.hrefs && article.hrefs[0].displayedText && <CardActions>
+									{article.hrefs.map(link => {
+										return (<Button
+											size={"small"}
+											disabled={link.disabled}
+											href={link.href}
+											target={"_blank"}
+											key={link.name}>
+											{link.displayedText}
+										</Button>);
+									})}
+									{article.links?.map(link => {
 										return (<Button
 											size={"small"}
 											disabled={link.disabled}
