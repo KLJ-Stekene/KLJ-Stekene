@@ -1,1 +1,1 @@
-export {default as bestuurscard} from "./bestuurscard";
+export {default as bestuurscard} from "./bestuurcard";

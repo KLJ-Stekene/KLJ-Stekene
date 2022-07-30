@@ -1,27 +1,15 @@
-import {Fragment, memo} from "react";
-import {ImageList, ImageListItem, Typography} from "@mui/material";
-import {startpaginaFotos} from "../../config";
-import {Nieuws} from "./nieuws";
-import {Gemakske} from "./gemakske";
+import {Fragment, lazy, memo} from "react";
+import {Box} from "@mui/material";
 
+const Splashscreen = lazy(() => import("./splashscreen"));
+const EvenementenSectie = lazy(() => import("./evenementen"));
 
 const Page = memo(() => {
-	return <Fragment>
-		<Typography align={"center"} variant={"h2"} component={"h1"}>
-			KLJ Stekene
-		</Typography>
-		<ImageList variant={"masonry"} cols={2} gap={8}>
-			{startpaginaFotos
-				.map(foto => {
-					return (<ImageListItem key={foto.alt}>
-						<img src={foto.image} alt={foto.alt} loading={"lazy"}
-							 width={foto.image.width} height={foto.image.height} />
-					</ImageListItem>);
-				})}
-		</ImageList>
-		<Nieuws />
-		<Gemakske />
-	</Fragment>;
+    return <Fragment>
+        <Splashscreen/>
+        <Box marginY={2}/>
+        <EvenementenSectie/>
+    </Fragment>;
 });
 
 export default Page;

@@ -1,13 +1,6 @@
-import IceIceBaby2022 from "./img/events/ice ice baby.png";
-import HastaBanana2022 from "./img/events/2022HastaBananaFlyer.png";
-import HastaBanana2022Profile from "./img/events/2022HastaBananaProfile.png";
-import MauricesLiefdesLeven from "./img/gemakske/2022-02-14-maurice.png";
-import MauriceOpPasen from "./img/gemakske/2021-04-17-maurice.png";
-import MauriceInDeZomer from "./img/gemakske/2022-06-01-Maurice.png";
-
-import {Add, CalendarToday, Directions, Facebook, Favorite, HouseSiding, Instagram, LocationOn, People, QuestionMark} from "@mui/icons-material";
-import {blue, deepOrange, red} from "@mui/material/colors";
-import {CardMedia} from "@mui/material";
+import hastaBananaBanner from "./img/events/2022HastaBanana.jpg";
+import hastaBananaLargeBanner from "./img/events/2022HastaBananaFlyer.png";
+import hastaBananaProfile from "./img/events/2022HastaBananaProfile.png";
 
 import AmberVanMoeseke from "./img/bestuur/ambervanmoeseke/face.jpeg";
 import AnoukLaureys from "./img/bestuur/anouklaureys/face.jpeg";
@@ -26,119 +19,98 @@ import RubenStuer from "./img/bestuur/rubenstuer/face.jpeg";
 import YenteDeVuyst from "./img/bestuur/yentedevuyst/face.jpeg";
 import YoranSelis from "./img/bestuur/yoranselis/face.jpeg";
 import Plus20Bestuur from "./img/bestuur/plus20/JonasJarno.jpeg";
-import Sportfeest19Foto from "./img/events/2019Sportfeest.jpg";
-import Sportfeest21Foto from "./img/events/2021Sportfeest.jpg";
-import Bestuursfoto2021 from "./img/events/2021Bestuursweekend.jpg";
-import WeekendGroepsfoto2022 from "./img/events/2022Weekend.JPEG";
 
-const startpaginaFotos = [{
-    image: Sportfeest19Foto, alt: "Sportfeest 2019",
+import JWSoundAndLightLogo from "./img/sponsors/JWSoundAndLight.png";
+import MarkDeCaluweLogo from "./img/sponsors/MarcDeCaluwe.JPG";
+import SchrijnwerkerBraemPhilipLogo from "./img/sponsors/SchrijnwerkerijBraemPhilip.png";
+import BakkerijArtoLogo from "./img/sponsors/BakkerijArto.jpg";
+import BakkerijVanLaereLogo from "./img/sponsors/VanLaere.png";
+import EuropaBankLogo from "./img/sponsors/Europabank.png";
+import DonckersLogo from "./img/sponsors/Donckers.png";
+import ElectrohuisLogo from "./img/sponsors/Elektrohuis.bmp";
+import KristofDhollanderLogo from "./img/sponsors/KristofDhollander.png";
+
+import {Add, CalendarToday, Directions, Facebook, Favorite, HouseSiding, Instagram, LocalActivity, LocationOn, People, QuestionMark} from "@mui/icons-material";
+import {blue, deepOrange, red} from "@mui/material/colors";
+import {CardMedia} from "@mui/material";
+
+const navbarButtons = [{
+    text: "Startpagina", icon: undefined, link: "/", color: undefined, disabled: false,
 }, {
-    image: Sportfeest21Foto, alt: "Sportfeest 2021",
+    text: "Over ons", icon: undefined, link: "/overons", color: undefined, disabled: false,
 }, {
-    image: Bestuursfoto2021, alt: "Bestuur 2021",
+    text: "Bestuur", icon: undefined, link: "/bestuur", color: undefined, disabled: false,
 }, {
-    image: WeekendGroepsfoto2022, alt: "Weekend 2022",
+    text: "Sponsors", icon: <Favorite/>, link: "/sponsors", color: red.A400, disabled: false,
 }];
 
-const links = [{
-    tekst: "startpagina", url: "/", disabled: false, color: "inherit",
-}, {
-    tekst: "Over ons", url: "/overons", disabled: false, color: "inherit",
-}, {
-    tekst: "Bestuur", url: "/bestuur", disabled: false, color: "inherit",
-}, {
-    url: "/sponsors", disabled: false, icon: <Favorite/>, color: red.A400,
-}, {
-    url:      "/hastabanana",
-    disabled: false,
-    icon:     <img src={HastaBanana2022Profile} alt={"Hasta Bañana"} height={"25px"} style={{borderRadius: "50%"}}/>,
-}];
-const socialMedia = [{
-    name:     "Facebook",
+const socialMediaLinks = [{
+    id:       "Facebook",
     icon:     <Facebook/>,
     color:    blue.A700,
+    link:     undefined,
+    href:     "https://www.facebook.com/KljStekene/",
+    target:   "_blank",
     disabled: false,
-    href:     "https://www.facebook.com/KljStekene/?utm_source=kljstekene.be&utm_medium=Referral",
 }, {
-    name:     "Instagram",
+    id:       "Instagram",
     icon:     <Instagram/>,
     color:    deepOrange.A400,
+    link:     undefined,
+    href:     "https://instagram.com/kljstekene",
+    target:   "_blank",
     disabled: false,
-    href:     "https://instagram.com/kljstekene?utm_source=kljstekene.be&utm_medium=Referral",
 }];
 
-
-const nieuws = [{
-    startDate:          new Date("2022-01-01"),
-    endDate:            new Date("2022-04-23"),
-    displayedEventDate: "",
-    title:              "",
-    text:               "",
-    image:              IceIceBaby2022,
-    hrefs: [{
-        name: "Facebook event", displayedText: "", href: "https://fb.me/e/1Ab5M00O8", disabled: false,
-    }],
-    size:               {
-        xs: 1, sm: 2, md: 3,
-    },
-}, {
-    startDate:          new Date("2022-06-13"),
-    endDate:            new Date("2022-08-06"),
-    displayedEventDate: "",
-    title:              "",
-    text:               "",
-    image:              HastaBanana2022,
-    hrefs:              [{
-        name: "Ticket pagina", displayedText: "Tickets", href: "https://shop.kljstekene.be/Tickets/", disabled: false,
-    }, {
-        name: "Facebook event", displayedText: "Facebook", href: "https://fb.me/e/1nzCN8mTy", disabled: false,
-    }],
-    links:              [{
-        name: "Ticket pagina", displayedText: "Tickets", href: "https://shop.kljstekene.be/Tickets/", disabled: false,
-    }, {
-        name: "Facebook event", displayedText: "Facebook", href: "https://fb.me/e/1nzCN8mTy", disabled: false,
-    }],
-    size:               {
-        xs: 1, sm: 2, md: 3,
-    },
-}];
-
-const gemakske = [{
-    startDate:          new Date("2022-02-14"),
-    endDate:            new Date("2022-04-14"),
-    displayedEventDate: "Valentijn '22",
-    title:              "Maurice's liefdesleven",
-    text:               "",
-    image:              MauricesLiefdesLeven,
-    size:               {
-        xs: 1, sm: 2, md: 2,
-    },
-}, {
-    startDate:          new Date("2022-04-17"),
-    endDate:            new Date("2022-06-01"),
-    displayedEventDate: "Pasen '22",
-    title:              "Het leven van Maurice: Pasen",
-    text:               "",
-    image:              MauriceOpPasen,
-    size:               {
-        xs: 1, sm: 2, md: 2,
-    },
-},
-    {
-        startDate:          new Date("2022-06-01"),
-        endDate:            new Date("2022-08-28"),
-        displayedEventDate: "Zomer '22",
-        title:              "Het leven van Maurice in de zomer",
-        text:               "",
-        image:              MauriceInDeZomer,
-        size:               {
-            xs: 1, sm: 2, md: 2,
+const evenementen = [{
+    fullName:             "Hasta Bañana",
+    shortName:            "Hasta",
+    url:                  "hastabanana",
+    location:             {
+        name:            "Ingang Gildenhuis",
+        description:     "Dorpsstraat 42, 9190 Stekene",
+        locationMapUrl:  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.7738301108407!2d4.037073415952312!3d51.20481904060201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3861263547e69%3A0x8b01b3b1555ab494!2sGildenhuis!5e0!3m2!1snl!2sbe!4v1659168230744!5m2!1snl!2sbe",
+        locationMapLink: {
+            text:     "Openen in kaarten",
+            icon:     undefined,
+            color:    undefined,
+            link:     undefined,
+            href:     "https://goo.gl/maps/DD7AX6kex9PtSkVW9",
+            target:   "_blank",
+            disabled: false,
         },
-    }];
+    },
+    startDateTime:        new Date("2022-08-06T19:00:00.000Z"),
+    stopDataTime:         new Date("2022-08-07T02:00:00.000Z"),
+    voorverkoopPrijs:     8,
+    aanDeKassaPrijs:      10,
+    startSellingDateTime: new Date("2022-07-00T00:00:00.000Z"),
+    stopSellingDateTime:  new Date("2022-08-06T00:00:00.000Z"),
+    bannerImage:          hastaBananaBanner,
+    largeBannerImage:     hastaBananaLargeBanner,
+    profileImage:         hastaBananaProfile,
+    links:                [{
+        text:         "Facebook",
+        icon:         <Facebook/>,
+        color:        undefined,
+        link:         undefined,
+        href:         "https://fb.me/e/1nzCN8mTy",
+        target:       "_blank",
+        disabled:     false,
+        isTicketLink: false,
+    }, {
+        text:         "Tickets",
+        icon:         <LocalActivity/>,
+        color:        undefined,
+        link:         undefined,
+        href:         "https://shop.kljstekene.be/Tickets/",
+        target:       "_blank",
+        disabled:     false,
+        isTicketLink: true,
+    }],
+}];
 
-
-const infoAboutUs = [{
+const infoKLJ = [{
     title: "Wat is KLJ Stekene?",
     text:  "KLJ Stekene is een jeugdbeweging voor iedereen vanaf 16 jaar. Elke vrijdagavond komen we samen in ons lokaal voor een leuke activiteit zoals een basspel, quiz, dropping, flodderdag, ruige spelen of zwemmen. Bovendien is er elk jaar een fantastisch kamp en een weekend. In de zomermaanden zitten we ook niet stil! Dan neemt onze KLJ deel aan wekelijkse sportfeesten en houden we een heus feestweekend met barbeque en fuif.",
     icon:  <QuestionMark/>,
@@ -208,8 +180,6 @@ const infoAboutUs = [{
         xs: 1, sm: 2, md: 3,
     },
 }];
-
-
 const bestuurstaken = [{//0
     name: "Jeugdraadslid",
 }, {//1
@@ -493,4 +463,46 @@ const bestuur = [{
     }, isHoofdbestuur: false, isNew: false, mail: "plus20@kljstekene.be",
 }];
 
-export {startpaginaFotos, links, socialMedia, nieuws, gemakske, infoAboutUs, bestuur};
+const sponsors = [{
+    name:     "J.W. Sound & Light", sponsoringen: [{
+        jaar: 2022, waarde: 1000, verborgen: false,
+    }], logo: JWSoundAndLightLogo,
+}, {
+    name:     "De Herinnering", sponsoringen: [{
+        jaar: 2022, waarde: 250, verborgen: true,
+    }], logo: JensPenneman,
+}, {
+    name:     "Mark De Caluwé", sponsoringen: [{
+        jaar: 2022, waarde: 250, verborgen: false,
+    }], logo: MarkDeCaluweLogo,
+}, {
+    name:     "Schrijnwerkerij Bream Philip", sponsoringen: [{
+        jaar: 2022, waarde: 125, verborgen: false,
+    }], logo: SchrijnwerkerBraemPhilipLogo,
+}, {
+    name:     "Bakkerij Arto", sponsoringen: [{
+        jaar: 2022, waarde: 125, verborgen: false,
+    }], logo: BakkerijArtoLogo,
+}, {
+    name:     "Bakkerij Van Laere", sponsoringen: [{
+        jaar: 2022, waarde: 125, verborgen: false,
+    }], logo: BakkerijVanLaereLogo,
+}, {
+    name:     "Europabank NV", sponsoringen: [{
+        jaar: 2022, waarde: 125, verborgen: false,
+    }], logo: EuropaBankLogo,
+}, {
+    name:     "Donckers", sponsoringen: [{
+        jaar: 2022, waarde: 50, verborgen: false,
+    }], logo: DonckersLogo,
+}, {
+    name:     "Electrohuis", sponsoringen: [{
+        jaar: 2022, waarde: 50, verborgen: false,
+    }], logo: ElectrohuisLogo,
+}, {
+    name:     "Kristof D'hollander", sponsoringen: [{
+        jaar: 2022, waarde: 50, verborgen: false,
+    }], logo: KristofDhollanderLogo,
+}];
+
+export {navbarButtons, socialMediaLinks, evenementen, infoKLJ, bestuur, sponsors};

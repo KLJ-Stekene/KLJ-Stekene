@@ -1,13 +1,15 @@
 import {Fragment, lazy, Suspense, useMemo} from "react";
-import {Container, createTheme, CssBaseline, LinearProgress, ThemeProvider, Typography, useMediaQuery} from "@mui/material";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {Container, createTheme, CssBaseline, LinearProgress, ThemeProvider, Typography, useMediaQuery} from "@mui/material";
 import {Footer, Navbar} from "./components";
-import {HastaBanana} from "./containers/events";
+import {evenementen} from "./config";
 
 const Startpagina = lazy(() => import("./containers/startpagina"));
-const Overonspagina = lazy(() => import("./containers/overons"));
-const Bestuurpagina = lazy(() => import("./containers/bestuur"));
-const Sponsorspagina = lazy(() => import("./containers/sponsors"));
+const OverOnsPagina = lazy(() => import("./containers/overons"));
+const BestuursPagina = lazy(() => import("./containers/bestuur"));
+const SponsorsPagina = lazy(() => import("./containers/sponsors"));
+const EvenementenSelectiePagina = lazy(() => import("./containers/evenement"));
+const EvenementPagina = lazy(() => import("./containers/evenement/evenementpagina"));
 
 function App() {
     const prefersLightMode = useMediaQuery("(prefers-color-scheme: light)");
@@ -17,14 +19,14 @@ function App() {
         },
     }), [prefersLightMode]);
 
-    return (<Fragment>
+    return <Fragment>
         <ThemeProvider theme={theme}>
             <CssBaseline/>
             <BrowserRouter>
                 <Navbar/>
                 <main>
                     <Container sx={{paddingY: 2}}>
-                        <Suspense fallback={<LinearProgress/>}>
+                        <Suspense fallback={<LinearProgress variant={"indeterminate"}/>}>
                             <Routes>
                                 <Route path={"*"} element={<Container>
                                     <Typography variant={"h4"} component={"h2"}>
@@ -33,10 +35,19 @@ function App() {
                                 </Container>}/>
                                 <Route path={"/"}>
                                     <Route index element={<Startpagina/>}/>
-                                    <Route path={"overons"} element={<Overonspagina/>}/>
-                                    <Route path={"bestuur"} element={<Bestuurpagina/>}/>
-                                    <Route path={"sponsors"} element={<Sponsorspagina/>}/>
-                                    <Route path={"hastabanana"} element={<HastaBanana/>}/>
+                                    <Route path={"overons"} element={<OverOnsPagina/>}/>
+                                    <Route path={"bestuur"} element={<BestuursPagina/>}/>
+                                    <Route path={"sponsors"} element={<SponsorsPagina/>}/>
+                                    <Route path={"evenement"}>
+                                        <Route index element={<EvenementenSelectiePagina/>}/>
+                                        {
+                                            evenementen.map((evenement, index) => <Route
+                                                key={index}
+                                                path={evenement.url}
+                                                element={<EvenementPagina evenement={evenement}/>}
+                                            />)
+                                        }
+                                    </Route>
                                 </Route>
                             </Routes>
                         </Suspense>
@@ -45,7 +56,7 @@ function App() {
                 <Footer/>
             </BrowserRouter>
         </ThemeProvider>
-    </Fragment>);
+    </Fragment>;
 }
 
 export default App;
