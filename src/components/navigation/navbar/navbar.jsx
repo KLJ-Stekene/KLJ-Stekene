@@ -16,7 +16,7 @@ const navbar = memo(() => {
     const navigate = useNavigate();
     useEffect(() => {
         closeNavDrawer();
-    }, [navigate]);
+    }, [navigate, closeNavDrawer]);
 
     return <Fragment>
         <AppBar position={"sticky"}>
