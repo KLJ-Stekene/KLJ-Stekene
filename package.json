@@ -1,62 +1,28 @@
 {
-  "name": "kljstekene",
-  "description": "De website van KLJ Stekene",
-  "homepage": "https://kljstekene.be/",
-  "author": {
-    "name": "Jens Penneman",
-    "email": "me@jenspenneman.com",
-    "url": "https://jenspenneman.com"
-  },
-  "contributors": [
-    {
-      "name": "Jens Penneman",
-      "email": "me@jenspenneman.com",
-      "url": "https://jenspenneman.com"
-    }
-  ],
-  "keywords": [
-    "KLJ",
-    "Stekene",
-    "jeugdbeweging"
-  ],
-  "version": "0.2.0",
+  "name": "kljstekenenextjs",
+  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.9.1",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@emotion/cache": "^11.10.3",
+    "@emotion/react": "^11.10.4",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.3",
+    "@mui/material": "^5.10.4",
+    "next": "12.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@emotion/eslint-plugin": "^11.10.0",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.3.0"
   }
 }
