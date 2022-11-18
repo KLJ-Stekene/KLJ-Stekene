@@ -3,7 +3,7 @@ import Head from "next/head";
 import {useRouter} from "next/router";
 import {Fragment, memo} from "react";
 import {events} from "/kljstekene.config";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import {Directions, FacebookOutlined, Instagram, LocalActivity} from "@mui/icons-material";
 
 
@@ -122,9 +122,15 @@ const Page = memo(() => {
                 <Grid item xs={1} md={3}>
                     <Card>
                         <CardMedia>
-                            <Box sx={{position: "relative", aspectRatio: "7/5"}}>
-                                <Image src={evenement?.images.largeBanner} alt={"large info banner"} layout={"fill"}
-                                       objectFit={"cover"} loading={"lazy"}/>
+                            <Box>
+                                <Image
+                                    src={evenement?.images.largeBanner}
+                                    alt={"large info banner"}
+                                    loading={"lazy"}
+                                    style={{
+                                        width:  "100%",
+                                        height: "auto",
+                                    }}/>
                             </Box>
                         </CardMedia>
                     </Card>

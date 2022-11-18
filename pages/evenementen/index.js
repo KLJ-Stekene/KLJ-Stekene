@@ -2,7 +2,7 @@ import {Fragment, memo, useCallback} from "react";
 import {Avatar, Card, CardActionArea, CardHeader, Container, Divider, Stack, Typography} from "@mui/material";
 import Head from "next/head";
 import {activeEvents, pastEvents, upcomingEvents} from "../../kljstekene.config";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import {useRouter} from "next/router";
 
 
@@ -139,24 +139,33 @@ const EvenementCard = memo(({url, name, eventDurations, images}) => {
         router.push("evenementen/" + url);
     }, [router, url]);
 
-    return <Card variant={"outlined"}>
-        <CardActionArea onClick={openEventpage} disabled={!url}>
-            <CardHeader
-                title={name}
-                subheader={"Van " + eventDurations[0].startDateTime.toLocaleString("nl-BE", {
-                    dateStyle: "long", timeStyle: "short",
-                }) + " tot " + eventDurations[0].endDateTime.toLocaleString("nl-BE", {
-                    dateStyle: "long", timeStyle: "short",
-                })}
-                avatar={
-                    images?.profile &&
-                    <Avatar>
-                        <Image src={images.profile} alt={"afbeelding van fuif"} loading={"lazy"}/>
-                    </Avatar>
-                }
-            />
-        </CardActionArea>
-    </Card>;
+    return (
+        <Card variant={"outlined"}>
+            <CardActionArea onClick={openEventpage} disabled={!url}>
+                <CardHeader
+                    title={name}
+                    subheader={"Van " + eventDurations[0].startDateTime.toLocaleString("nl-BE", {
+                        dateStyle: "long", timeStyle: "short",
+                    }) + " tot " + eventDurations[0].endDateTime.toLocaleString("nl-BE", {
+                        dateStyle: "long", timeStyle: "short",
+                    })}
+                    avatar={
+                        images?.profile &&
+                        <Avatar>
+                            <Image
+                                src={images.profile}
+                                alt={"afbeelding van fuif"}
+                                loading={"lazy"}
+                                style={{
+                                    width:  "100%",
+                                    height: "auto",
+                                }}/>
+                        </Avatar>
+                    }
+                />
+            </CardActionArea>
+        </Card>
+    );
 });
 
 Page.displayName = "evenementenpagina";

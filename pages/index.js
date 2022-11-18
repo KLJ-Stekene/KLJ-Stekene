@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import {Fragment, memo, useCallback} from "react";
 import {Alert, Box, Button, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Container, Divider, Grid, IconButton, Typography} from "@mui/material";
 import {pastEvents, splashPhotos, upcomingEvents} from "/kljstekene.config";
@@ -135,15 +135,24 @@ const Splashscreen = memo(() => {
 });
 
 const SplashPhoto = memo(({photo, alt}) => {
-    return <Grid item xs={1} sm={1}>
-        <Card>
-            <CardMedia>
-                <Box sx={{position: "relative", aspectRatio: "16/9"}}>
-                    <Image src={photo} alt={alt} layout={"fill"} objectFit={"cover"} priority/>
-                </Box>
-            </CardMedia>
-        </Card>
-    </Grid>;
+    return (
+        <Grid item xs={1} sm={1}>
+            <Card>
+                <CardMedia>
+                    <Box sx={{position: "relative", aspectRatio: "16/9"}}>
+                        <Image
+                            src={photo}
+                            alt={alt}
+                            priority
+                            style={{
+                                maxWidth: "100%",
+                                height:   "auto",
+                            }}/>
+                    </Box>
+                </CardMedia>
+            </Card>
+        </Grid>
+    );
 });
 
 const EventSplash = memo(() => {
@@ -190,56 +199,62 @@ const EventCard = memo(({name, url, images, tickets}) => {
         router.push("evenementen/" + url);
     }, [router, url]);
 
-    return <Card>
-        {
-            images?.smallBanner &&
-            <CardActionArea disabled={!url} onClick={openEventPage}>
-                <CardMedia>
-                    <Box sx={{position: "relative", aspectRatio: "16/9"}}>
-                        <Image src={images.smallBanner} alt={" "} layout={"fill"} objectFit={"cover"}/>
-                    </Box>
-                </CardMedia>
-            </CardActionArea>
-        }
-        {
-            !images?.smallBanner && url &&
-            <CardHeader title={name}/>
-        }
-        <CardActions sx={{overflowX: "auto"}}>
+    return (
+        <Card>
             {
-                url &&
-                <Button endIcon={<ChevronRight/>}
-                        sx={{
-                            marginRight: 1,
-                            flexShrink:  0,
-                            flexGrow:    images?.smallBanner ? 1 : undefined,
-                        }}
-                        onClick={openEventPage}>
-                    Meer info
-                </Button>
+                images?.smallBanner &&
+                <CardActionArea disabled={!url} onClick={openEventPage}>
+                    <CardMedia>
+                        <Image
+                            src={images.smallBanner}
+                            alt={" "}
+                            style={{
+                                width:  "100%",
+                                height: "auto",
+                            }}/>
+                    </CardMedia>
+                </CardActionArea>
             }
+            {
+                !images?.smallBanner && url &&
+                <CardHeader title={name}/>
+            }
+            <CardActions sx={{overflowX: "auto"}}>
+                {
+                    url &&
+                    <Button endIcon={<ChevronRight/>}
+                            sx={{
+                                marginRight: 1,
+                                flexShrink:  0,
+                                flexGrow:    images?.smallBanner ? 1 : undefined,
+                            }}
+                            onClick={openEventPage}>
+                        Meer info
+                    </Button>
+                }
+                {
+                    !images?.smallBanner && !url &&
+                    <CardHeader title={name} sx={{marginLeft: -1}}/>
+                }
+                {
+                    tickets?.availableOnlineVVK &&
+                    <IconButton href={tickets.hrefVVK}
+                                disabled={!(tickets.startDateVVK < new Date() && new Date() < tickets.endDateVVK)}
+                                sx={{marginLeft: "auto"}}>
+                        <LocalActivity/>
+                    </IconButton>
+                }
+            </CardActions>
             {
                 !images?.smallBanner && !url &&
-                <CardHeader title={name} sx={{marginLeft: -1}}/>
+                <CardContent>
+                    <Typography>
+                        Kom later eens terug voor meer info!
+                    </Typography>
+                </CardContent>
             }
-            {
-                tickets?.availableOnlineVVK &&
-                <IconButton href={tickets.hrefVVK}
-                            disabled={!(tickets.startDateVVK < new Date() && new Date() < tickets.endDateVVK)}
-                            sx={{marginLeft: "auto"}}>
-                    <LocalActivity/>
-                </IconButton>
-            }
-        </CardActions>
-        {
-            !images?.smallBanner && !url &&
-            <CardContent>
-                <Typography>
-                    Kom later eens terug voor meer info!
-                </Typography>
-            </CardContent>
-        }
-    </Card>;
+        </Card>
+    );
 });
 
 Page.displayName = "startpagina";
