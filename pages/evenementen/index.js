@@ -2,7 +2,7 @@ import {Fragment, memo, useCallback} from "react";
 import {Avatar, Card, CardActionArea, CardHeader, Container, Divider, Stack, Typography} from "@mui/material";
 import Head from "next/head";
 import {activeEvents, pastEvents, upcomingEvents} from "../../kljstekene.config";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import {useRouter} from "next/router";
 
 

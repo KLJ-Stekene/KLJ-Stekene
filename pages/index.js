@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from "next/image";
+import Image from "next/legacy/image";
 import {Fragment, memo, useCallback} from "react";
 import {Alert, Box, Button, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Container, Divider, Grid, IconButton, Typography} from "@mui/material";
 import {pastEvents, splashPhotos, upcomingEvents} from "/kljstekene.config";

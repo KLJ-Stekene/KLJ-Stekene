@@ -3,7 +3,7 @@ import Head from "next/head";
 import {useRouter} from "next/router";
 import {Fragment, memo} from "react";
 import {events} from "/kljstekene.config";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import {Directions, FacebookOutlined, Instagram, LocalActivity} from "@mui/icons-material";
 
 

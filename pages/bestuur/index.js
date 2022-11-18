@@ -1,7 +1,7 @@
 import bestuursFoto from "/public/img/bestuur/bestuur2022.JPG";
 
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import {Fragment, memo, useCallback, useState} from "react";
 import {Box, Card, CardActions, CardContent, CardMedia, Collapse, Container, Divider, Grid, IconButton, List, ListItem, ListItemButton, ListItemText, ListSubheader, Stack, Typography} from "@mui/material";
 import {ExpandLess, ExpandMore, Mail} from "@mui/icons-material";
