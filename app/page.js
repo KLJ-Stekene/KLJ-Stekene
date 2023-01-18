@@ -1,3 +1,3 @@
 export default function Page() {
-    return <h1>Startpagina</h1>;
+    return <p>KLJ Stekene is having technical difficulties</p>;
 }
