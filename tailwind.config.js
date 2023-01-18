@@ -8,5 +8,7 @@ module.exports = {
   theme:   {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@headlessui/tailwindcss'),
+  ],
 };
