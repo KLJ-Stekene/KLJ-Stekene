@@ -1,3 +1,3 @@
 export default function Page() {
-    return <h1>Bestuurspagina</h1>;
+    return <span>KLJ Stekene is currently experiencing technical difficulties.</span>;
 }
