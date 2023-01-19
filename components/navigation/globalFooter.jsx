@@ -16,7 +16,8 @@ const GlobalFooter = memo(() => {
 GlobalFooter.displayName = "Global footer container";
 
 const Copyrights = memo(() => {
-    return <Typography>&copy; <Button variant={"text"} size={"small"} sx={{px: 0.5}}>WEB4YOU</Button> 2023</Typography>;
+    return <Typography>&copy; <Button variant={"text"} size={"small"} sx={{px: 0.5}} target={"_blank"}
+                                      href={"https://web-4-you.be/"}>WEB4YOU</Button> 2023</Typography>;
 });
 Copyrights.displayName = "Copyrights notice for footer";
 
