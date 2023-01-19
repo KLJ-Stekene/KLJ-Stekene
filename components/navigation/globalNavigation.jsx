@@ -63,7 +63,7 @@ const GlobalNavigation = memo(() => {
             open={isShowingNavDrawer}
             onClose={closeNavDrawer}
         >
-            <Toolbar>
+            <Toolbar sx={{width: "100vw"}}>
                 <Typography
                     variant={"h6"}
                     noWrap
