@@ -2,19 +2,8 @@
 
 import {memo} from "react";
 import {AppBar, Button, Container, IconButton, Toolbar, Typography} from "@mui/material";
-import FacebookOutlined from "@mui/icons-material/FacebookOutlined";
-import Instagram from "@mui/icons-material/Instagram";
 
-const socialMedia = [
-    {
-        icon: <FacebookOutlined/>,
-        href: "https://facebook.com/KljStekene",
-    },
-    {
-        icon: <Instagram/>,
-        href: "https://instagram.com/kljstekene",
-    },
-];
+import * as config from "#/kljstekene.config";
 
 const GlobalFooter = memo(() => {
     return <AppBar position={"static"} color={"inherit"} elevation={0} enableColorOnDark
@@ -22,7 +11,8 @@ const GlobalFooter = memo(() => {
         <Container>
             <Toolbar disableGutters sx={{overflowX: "auto"}}>
                 <Copyrights/>
-                {socialMedia.map((item, index) => <SocialMediaLink key={index} {...item}/>)}
+                {config.companyInfo.socialMedia
+                       .map((item, index) => <SocialMediaLink key={index} {...item}/>)}
             </Toolbar>
         </Container>
     </AppBar>;
