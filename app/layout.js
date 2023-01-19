@@ -1,3 +1,4 @@
+import "./globals.css";
 import {GlobalNavigation} from "../components/navigation/globalNavigation";
 import {GlobalFooter} from "../components/navigation/globalFooter";
 

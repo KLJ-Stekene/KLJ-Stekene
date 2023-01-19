@@ -1,14 +1,17 @@
 "use client";
 
 import {memo} from "react";
-import {Button, Container, Toolbar, Typography} from "@mui/material";
+import {AppBar, Button, Container, Toolbar, Typography} from "@mui/material";
 
 const GlobalFooter = memo(() => {
-    return <Container>
-        <Toolbar disableGutters>
-            <Copyrights/>
-        </Toolbar>
-    </Container>;
+    return <AppBar position={"static"} color={"inherit"} elevation={0} enableColorOnDark
+                   sx={{background: "transparent", marginTop: "auto", flexShrink: 0}}>
+        <Container>
+            <Toolbar disableGutters>
+                <Copyrights/>
+            </Toolbar>
+        </Container>
+    </AppBar>;
 });
 GlobalFooter.displayName = "Global footer container";
 
