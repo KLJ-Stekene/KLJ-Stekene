@@ -7,7 +7,9 @@ export default function RootLayout({children}) {
     <head/>
     <body>
     <GlobalNavigation/>
-    {children}
+    <main>
+        {children}
+    </main>
     <GlobalFooter/>
     </body>
     </html>;

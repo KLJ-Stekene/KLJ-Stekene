@@ -43,7 +43,7 @@ const GlobalNavigation = memo(() => {
                         variant={"h6"}
                         noWrap
                         component={"div"}
-                        sx={{flexGrow: {xs: 1, sm: 0, md: 1}, marginRight: {xs: 0, sm: 4, md: 0}}}
+                        sx={{flexGrow: {xs: 1, sm: 0, md: 1}, marginRight: {xs: 0, sm: 2, md: 0}}}
                     >KLJ Stekene</Typography>
                     <Box component={"div"} sx={{display: {xs: "flex", sm: "none"}}}>
                         <IconButton
