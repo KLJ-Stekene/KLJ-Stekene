@@ -1,15 +1,28 @@
+import JarnoSchepens from "#/public/assets/img/boardmember/jarnoschepens/face2022.JPG";
+import NinaSelis from "#/public/assets/img/boardmember/ninaselis/face2022.jpg";
+import AmberVanMoeseke from "#/public/assets/img/boardmember/ambervanmoeseke/face2022.jpg";
+import AnoukLaureys from "#/public/assets/img/boardmember/anouklaureys/face2022.jpg";
+import EwaldTindemans from "#/public/assets/img/boardmember/ewaldtindemans/face2022.jpg";
+import FebeMeerschaert from "#/public/assets/img/boardmember/febemeerschaert/face2022.jpg";
+import FeniksVanVooren from "#/public/assets/img/boardmember/feniksvanvooren/face2022.jpg";
+import JasmijnSchelfhout from "#/public/assets/img/boardmember/jasmijnschelfhout/face2022.jpg";
+import JensPenneman from "#/public/assets/img/boardmember/jenspenneman/face2022.jpg";
+import LotteJacobs from "#/public/assets/img/boardmember/lottejacobs/face2022.jpg";
+import MaartenVanGoey from "#/public/assets/img/boardmember/maartenvangoey/face2022.jpg";
+import OnnoVanAken from "#/public/assets/img/boardmember/onnovanaken/face2022.jpg";
+import RobinMeerschaert from "#/public/assets/img/boardmember/robinmeerschaert/face2022.jpg";
+import YoranSelis from "#/public/assets/img/boardmember/yoranselis/face2022.jpg";
+
+import {CardMedia} from "@mui/material";
 import FacebookOutlined from "@mui/icons-material/FacebookOutlined";
 import Instagram from "@mui/icons-material/Instagram";
-import {CardMedia} from "@mui/material";
 
 export const companyInfo = {
-    name:        "KLJ Stekene",
-    socialMedia: [{
+    name:             "KLJ Stekene", socialMedia: [{
         icon: <FacebookOutlined/>, href: "https://facebook.com/KljStekene",
     }, {
         icon: <Instagram/>, href: "https://instagram.com/kljstekene",
-    }],
-    aboutUs:     [{
+    }], aboutUs:      [{
         title:    "Wat is KLJ Stekene?",
         text:     "KLJ Stekene is een jeugdbeweging voor iedereen vanaf 16 jaar. Elke vrijdagavond komen we samen in ons lokaal voor een leuke activiteit zoals een basspel, quiz, dropping, flodderdag, ruige spelen of zwemmen. Bovendien is er elk jaar een fantastisch kamp en een weekend. In de zomermaanden zitten we ook niet stil! Dan neemt onze KLJ deel aan wekelijkse sportfeesten en houden we een heus feestweekend met barbeque en fuif.",
         gridSize: {xs: 1, sm: 2, md: 3},
@@ -28,11 +41,11 @@ export const companyInfo = {
         buttons:  [],
         media:    undefined,
     }, {
-        title:    "Wanneer is KLJ Stekene?",
-        text:     "Op vrijdagavond wordt er meestal 's avonds vanaf 20 uur een activiteit georganiseerd. In Juli en augustus zijn er geen activiteiten, maar worden er andere evenementen georganiseerd. Op zondagen in de vakantie nemen we ook deel aan sportfeesten. Hiervoor oefenen we een hele zomer lang.",
+        title: "Wanneer is KLJ Stekene?",
+        text:  "Op vrijdagavond wordt er meestal 's avonds vanaf 20 uur een activiteit georganiseerd. In Juli en augustus zijn er geen activiteiten, maar worden er andere evenementen georganiseerd. Op zondagen in de vakantie nemen we ook deel aan sportfeesten. Hiervoor oefenen we een hele zomer lang.",
         gridSize: {xs: 1, sm: 1, md: 1},
         buttons:  [],
-        media:    undefined,
+        media: undefined,
     }, {
         title:     "Locatie", text: undefined, gridSize: {xs: 1, sm: 2, md: 3}, buttons: [{
             text: "Openen in kaarten",
@@ -45,11 +58,11 @@ export const companyInfo = {
                               }}
                               src={"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.7166528421994!2d4.035102815937717!3d51.20587254052515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c38612daa95979%3A0x6ea12edb2df41fc1!2sKLJ%20Stekene!5e0!3m2!1snl!2sbe!4v1663328740969!5m2!1snl!2sbe"}/>,
     }, {
-        title:    "Weekend",
-        text:     "Weekend is een 3-daagse die meestal rond de krokusvakantie valt. We vertrekken vrijdagavond vol vreugde en komen zondagavond moe terug. De prijs van dit weekend bedraagt 40 euro voor overnachting, maaltijden en een tal van activiteiten.",
+        title:   "Weekend",
+        text:    "Weekend is een 3-daagse die meestal rond de krokusvakantie valt. We vertrekken vrijdagavond vol vreugde en komen zondagavond moe terug. De prijs van dit weekend bedraagt 40 euro voor overnachting, maaltijden en een tal van activiteiten.",
         gridSize: {xs: 1, sm: 1, md: 1},
-        buttons:  [],
-        media:    undefined,
+        buttons: [],
+        media:   undefined,
     }, {
         title:    "Kamp",
         text:     "Het kamp gaat elk jaar door van 11 tot 21 juli. Gedurende die 10 dagen wordt er steeds een ochtend-, namiddag- en avondactiviteit voorzien. De prijs is hier €140 voor overnachting, maaltijden en activiteiten. De drank is hier echter zelf te betalen.",
@@ -68,6 +81,84 @@ export const companyInfo = {
         gridSize: {xs: 1, sm: 2, md: 3},
         buttons:  [],
         media:    undefined,
+    }], boardMembers: [{
+        firstname: "Jarno", lastname: "Schepens", mail: "jarno.schepens@kljstekene.be", avatar: {
+            src: JarnoSchepens, alt: "Portret",
+        }, tasks:  ["Hoofdbestuur", "Jeugdraadslid", "Bestuursanimatieverantwoordelijke"],
+    }, {
+        firstname: "Nina", lastname: "Selis", mail: "nina.selis@kljstekene.be", avatar: {
+            src: NinaSelis, alt: "Portret",
+        }, tasks:  ["Hoofdbestuur", "Jeugdraadslid", "Bestuursanimatieverantwoordelijke"],
+    }, {
+        firstname: "Amber",
+        lastname:  "Van Moeseke",
+        mail:      "amber.van.moeseke@kljstekene.be",
+        avatar:    {
+            src: AmberVanMoeseke, alt: "Portret",
+        },
+        tasks:     ["Sportfeestverantwoordelijke", "Kamp- en weekendverantwoordelijke", "Verjaardag- en prikbordverantwoordelijke"],
+    }, {
+        firstname: "Anouk",
+        lastname:  "Laureys",
+        mail:      "anouk.laureys@kljstekene.be",
+        avatar:    {
+            src: AnoukLaureys, alt: "Portret",
+        },
+        tasks:     ["Kassier", "Sportfeestverantwoordelijke", "EHBO-verantwoordelijke", "Bestuursanimatieverantwoordelijke"],
+    }, {
+        firstname: "Ewald", lastname: "Tindemans", mail: "ewald.tindemans@kljstekene.be", avatar: {
+            src: EwaldTindemans, alt: "Portret",
+        }, tasks:  ["Gewestraadslid", "Sportfeestverantwoordelijke"],
+    }, {
+        firstname: "Febe",
+        lastname:  "Meerschaert",
+        mail:      "febe.meerschaert@kljstekene.be",
+        avatar:    {
+            src: FebeMeerschaert, alt: "Portret",
+        },
+        tasks:     ["PR-verantwoordelijke", "Sportfeestverantwoordelijke", "Foto-verantwoordelijke", "Verjaardag- en prikbordverantwoordelijke"],
+    }, {
+        firstname: "Feniks", lastname: "Van Vooren", mail: "feniks.van.vooren@kljstekene.be", avatar: {
+            src: FeniksVanVooren, alt: "Portret",
+        }, tasks:  ["Gewestraadslid", "Sportfeestverantwoordelijke", "GEM", "Kamp- en weekendverantwoordelijke"],
+    }, {
+        firstname: "Jasmijn", lastname: "Schelfhout", mail: "jasmijn.schelfhout@kljstekene.be", avatar: {
+            src: JasmijnSchelfhout, alt: "Portret",
+        }, tasks:  ["Kassier", "EHBO-verantwoordelijke"],
+    }, {
+        firstname: "Jens", lastname: "Penneman", mail: "jens.penneman@kljstekene.be", avatar: {
+            src: JensPenneman, alt: "Portret",
+        }, tasks:  ["Drankverantwoordelijke", "WEB", "Foto-verantwoordelijke", "Archivaris & dropboxverantwoordelijke"],
+    }, {
+        firstname: "Lotte",
+        lastname:  "Jacobs",
+        mail:      "lotte.jacobs@kljstekene.be",
+        avatar:    {
+            src: LotteJacobs, alt: "Portret",
+        },
+        tasks:     ["Secretaris", "PR-verantwoordelijke", "Sportfeestverantwoordelijke", "Kledijverantwoordelijke", "K-verantwoordelijke"],
+    }, {
+        firstname: "Maarten", lastname: "Van Goey", mail: "maarten.van.goey@kljstekene.be", avatar: {
+            src: MaartenVanGoey, alt: "Portret",
+        }, tasks:  ["Technische dienst", "Drankverantwoordelijke"],
+    }, {
+        firstname: "Onno", lastname: "Van Aken", mail: "onno.van.aken@kljstekene.be", avatar: {
+            src: OnnoVanAken, alt: "Portret",
+        }, tasks:  ["GEM", "Bestuursanimatieverantwoordelijke"],
+    }, {
+        firstname: "Robin", lastname: "Meerschaert", mail: "robin.meerschaert@kljstekene.be", avatar: {
+            src: RobinMeerschaert, alt: "Portret",
+        }, tasks:  ["Jeugdraadslid", "Technische dienst", "Cramme-verantwoordelijke"],
+    }, {
+        firstname: "Yoran",
+        lastname:  "Selis",
+        mail:      "yoran.selis@kljstekene.be",
+        avatar:    {
+            src: YoranSelis, alt: "Portret",
+        },
+        tasks:     ["Secretaris", "Sportfeestverantwoordelijke", "Drankverantwoordelijke", "Lokaalverhuurverantwoordelijke"],
+    }, {
+        firstname: "+20", lastname: "bestuur", mail: "plus20@kljstekene.be",
     }],
 };
 
@@ -82,7 +173,9 @@ export const globalNavigation = [{
 }];
 
 export const pageContent = {
-    overons: {
+    overons:    {
         title: "Over ons",
+    }, bestuur: {
+        title: "Bestuur",
     },
 };
