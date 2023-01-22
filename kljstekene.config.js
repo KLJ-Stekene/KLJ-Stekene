@@ -153,9 +153,11 @@ export const globalNavigation = [{
     displayText: "Over ons", link: "/overons", links: undefined,
 }, {
     displayText: "Bestuur", link: "/bestuur", links: undefined,
-}, {
-    displayText: "Sponsors", link: "/sponsors", links: undefined,
-}];
+},
+//    {
+//        displayText: "Sponsors", link: "/sponsors", links: undefined,
+//    },
+];
 
 export const pageContent = {
     index:      {
