@@ -1,14 +1,17 @@
 "use client";
 
-import {Fragment, memo, useState} from "react";
+import {Fragment, memo, useCallback, useState} from "react";
+import {useRouter as useNavigationRouter} from "next/navigation";
 import {AppBar, Box, Button, Container, CssBaseline, Drawer, IconButton, List, ListItemButton, ListItemText, Toolbar, Typography} from "@mui/material";
 import Menu from "@mui/icons-material/Menu";
 import Close from "@mui/icons-material/Close";
-import {useRouter as useNavigationRouter} from "next/navigation";
 
 import * as config from "#/kljstekene.config";
 
 const GlobalNavigation = memo(() => {
+    const router = useNavigationRouter();
+    const goBackToIndex = useCallback(() => router.push("/"), [router]);
+
     const [isShowingNavDrawer, showNavDrawer] = useState(false);
     const openNavDrawer = () => showNavDrawer(true);
     const closeNavDrawer = () => showNavDrawer(false);
@@ -18,12 +21,14 @@ const GlobalNavigation = memo(() => {
         <AppBar position={"sticky"}>
             <Container>
                 <Toolbar disableGutters>
-                    <Typography
-                        variant={"h6"}
-                        noWrap
-                        component={"div"}
-                        sx={{flexGrow: {xs: 1, sm: 0, md: 1}, marginRight: {xs: 0, sm: 2, md: 0}}}
-                    >{config.companyInfo.name}</Typography>
+                    <Button onClick={goBackToIndex} variant={"outlined"} color={"inherit"} size={"small"}>
+                        <Typography
+                            variant={"h6"}
+                            noWrap
+                            component={"div"}
+                        >{config.companyInfo.name}</Typography>
+                    </Button>
+                    <Box sx={{flexGrow: {xs: 1, sm: 0, md: 1}, marginRight: {xs: 0, sm: 2, md: 0}}}/>
                     <Box component={"div"} sx={{display: {xs: "flex", sm: "none"}}}>
                         <IconButton
                             edge={"end"}
@@ -70,16 +75,18 @@ GlobalNavigation.displayName = "Global navigation";
 
 const AppbarItem = memo(({displayText, link}) => {
     const router = useNavigationRouter();
-    return <Button onClick={() => router.push(link)} sx={{color: "inherit"}}>{displayText}</Button>;
+    const performNavigate = useCallback(() => router.push(link), [router, link]);
+    return <Button onClick={performNavigate} sx={{color: "inherit"}}>{displayText}</Button>;
 });
 AppbarItem.displayName = "Appbar navigation item";
 
 const DrawerItem = memo(({displayText, link, closeNavigation = () => undefined}) => {
     const router = useNavigationRouter();
-    return <ListItemButton onClick={() => {
+    const performNavigate = useCallback(() => {
         closeNavigation();
         router.push(link);
-    }}><ListItemText primary={displayText}/></ListItemButton>;
+    }, [router, link, closeNavigation]);
+    return <ListItemButton onClick={() => performNavigate}><ListItemText primary={displayText}/></ListItemButton>;
 });
 DrawerItem.displayName = "Drawer navigation item";
 
