@@ -86,7 +86,7 @@ const DrawerItem = memo(({displayText, link, closeNavigation = () => undefined})
         closeNavigation();
         router.push(link);
     }, [router, link, closeNavigation]);
-    return <ListItemButton onClick={() => performNavigate}><ListItemText primary={displayText}/></ListItemButton>;
+    return <ListItemButton onClick={performNavigate}><ListItemText primary={displayText}/></ListItemButton>;
 });
 DrawerItem.displayName = "Drawer navigation item";
 
