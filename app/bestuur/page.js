@@ -1,6 +1,6 @@
 "use client";
 
-import groupspicture from "#/assets/img/boardmember/bestuur2022.JPG";
+import groupspicture from "#/public/assets/img/boardmember/bestuur2022.JPG";
 
 import {Fragment, memo} from "react";
 import {Card, CardMedia, Container, Grid, Typography} from "@mui/material";

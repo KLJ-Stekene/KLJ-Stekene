@@ -1,24 +1,24 @@
-import JarnoSchepens from "#/assets/img/boardmember/jarnoschepens/face2022.JPG";
-import NinaSelis from "#/assets/img/boardmember/ninaselis/face2022.jpg";
-import AmberVanMoeseke from "#/assets/img/boardmember/ambervanmoeseke/face2022.jpg";
-import AnoukLaureys from "#/assets/img/boardmember/anouklaureys/face2022.jpg";
-import EwaldTindemans from "#/assets/img/boardmember/ewaldtindemans/face2022.jpg";
-import FebeMeerschaert from "#/assets/img/boardmember/febemeerschaert/face2022.jpg";
-import FeniksVanVooren from "#/assets/img/boardmember/feniksvanvooren/face2022.jpg";
-import JasmijnSchelfhout from "#/assets/img/boardmember/jasmijnschelfhout/face2022.jpg";
-import JensPenneman from "#/assets/img/boardmember/jenspenneman/face2022.jpg";
-import LotteJacobs from "#/assets/img/boardmember/lottejacobs/face2022.jpg";
-import MaartenVanGoey from "#/assets/img/boardmember/maartenvangoey/face2022.jpg";
-import OnnoVanAken from "#/assets/img/boardmember/onnovanaken/face2022.jpg";
-import RobinMeerschaert from "#/assets/img/boardmember/robinmeerschaert/face2022.jpg";
-import YoranSelis from "#/assets/img/boardmember/yoranselis/face2022.jpg";
+//import JarnoSchepens from "#/public/assets/img/boardmember/jarnoschepens/face2022.JPG";
+//import NinaSelis from "#/public/assets/img/boardmember/ninaselis/face2022.jpg";
+//import AmberVanMoeseke from "#/public/assets/img/boardmember/ambervanmoeseke/face2022.jpg";
+//import AnoukLaureys from "#/public/assets/img/boardmember/anouklaureys/face2022.jpg";
+//import EwaldTindemans from "#/public/assets/img/boardmember/ewaldtindemans/face2022.jpg";
+//import FebeMeerschaert from "#/public/assets/img/boardmember/febemeerschaert/face2022.jpg";
+//import FeniksVanVooren from "#/public/assets/img/boardmember/feniksvanvooren/face2022.jpg";
+//import JasmijnSchelfhout from "#/public/assets/img/boardmember/jasmijnschelfhout/face2022.jpg";
+//import JensPenneman from "#/public/assets/img/boardmember/jenspenneman/face2022.jpg";
+//import LotteJacobs from "#/public/assets/img/boardmember/lottejacobs/face2022.jpg";
+//import MaartenVanGoey from "#/public/assets/img/boardmember/maartenvangoey/face2022.jpg";
+//import OnnoVanAken from "#/public/assets/img/boardmember/onnovanaken/face2022.jpg";
+//import RobinMeerschaert from "#/public/assets/img/boardmember/robinmeerschaert/face2022.jpg";
+//import YoranSelis from "#/public/assets/img/boardmember/yoranselis/face2022.jpg";
 
 import {CardMedia} from "@mui/material";
 import FacebookOutlined from "@mui/icons-material/FacebookOutlined";
 import Instagram from "@mui/icons-material/Instagram";
 
 export const companyInfo = {
-    name:             "KLJ Stekene", socialMedia: [{
+    name:                                                              "KLJ Stekene", socialMedia: [{
         icon: <FacebookOutlined/>, href: "https://facebook.com/KljStekene",
     }, {
         icon: <Instagram/>, href: "https://instagram.com/kljstekene",
@@ -83,78 +83,78 @@ export const companyInfo = {
         media:    undefined,
     }], boardMembers: [{
         firstname: "Jarno", lastname: "Schepens", mail: "jarno.schepens@kljstekene.be", avatar: {
-            src: JarnoSchepens, alt: "Portret",
+            src: undefined, alt: "Portret",
         }, tasks:  ["Hoofdbestuur", "Jeugdraadslid", "Bestuursanimatieverantwoordelijke"],
     }, {
         firstname: "Nina", lastname: "Selis", mail: "nina.selis@kljstekene.be", avatar: {
-            src: NinaSelis, alt: "Portret",
+            src: undefined, alt: "Portret",
         }, tasks:  ["Hoofdbestuur", "Jeugdraadslid", "Bestuursanimatieverantwoordelijke"],
     }, {
         firstname: "Amber",
         lastname:  "Van Moeseke",
         mail:      "amber.van.moeseke@kljstekene.be",
-        avatar:    {
-            src: AmberVanMoeseke, alt: "Portret",
+        avatar: {
+            src: undefined, alt: "Portret",
         },
         tasks:     ["Sportfeestverantwoordelijke", "Kamp- en weekendverantwoordelijke", "Verjaardag- en prikbordverantwoordelijke"],
     }, {
         firstname: "Anouk",
         lastname:  "Laureys",
         mail:      "anouk.laureys@kljstekene.be",
-        avatar:    {
-            src: AnoukLaureys, alt: "Portret",
+        avatar: {
+            src: undefined, alt: "Portret",
         },
         tasks:     ["Kassier", "Sportfeestverantwoordelijke", "EHBO-verantwoordelijke", "Bestuursanimatieverantwoordelijke"],
     }, {
         firstname: "Ewald", lastname: "Tindemans", mail: "ewald.tindemans@kljstekene.be", avatar: {
-            src: EwaldTindemans, alt: "Portret",
+            src: undefined, alt: "Portret",
         }, tasks:  ["Gewestraadslid", "Sportfeestverantwoordelijke"],
     }, {
         firstname: "Febe",
         lastname:  "Meerschaert",
         mail:      "febe.meerschaert@kljstekene.be",
-        avatar:    {
-            src: FebeMeerschaert, alt: "Portret",
+        avatar: {
+            src: undefined, alt: "Portret",
         },
         tasks:     ["PR-verantwoordelijke", "Sportfeestverantwoordelijke", "Foto-verantwoordelijke", "Verjaardag- en prikbordverantwoordelijke"],
     }, {
         firstname: "Feniks", lastname: "Van Vooren", mail: "feniks.van.vooren@kljstekene.be", avatar: {
-            src: FeniksVanVooren, alt: "Portret",
+            src: undefined, alt: "Portret",
         }, tasks:  ["Gewestraadslid", "Sportfeestverantwoordelijke", "GEM", "Kamp- en weekendverantwoordelijke"],
     }, {
         firstname: "Jasmijn", lastname: "Schelfhout", mail: "jasmijn.schelfhout@kljstekene.be", avatar: {
-            src: JasmijnSchelfhout, alt: "Portret",
+            src: undefined, alt: "Portret",
         }, tasks:  ["Kassier", "EHBO-verantwoordelijke"],
     }, {
         firstname: "Jens", lastname: "Penneman", mail: "jens.penneman@kljstekene.be", avatar: {
-            src: JensPenneman, alt: "Portret",
+            src: undefined, alt: "Portret",
         }, tasks:  ["Drankverantwoordelijke", "WEB", "Foto-verantwoordelijke", "Archivaris & dropboxverantwoordelijke"],
     }, {
         firstname: "Lotte",
         lastname:  "Jacobs",
         mail:      "lotte.jacobs@kljstekene.be",
-        avatar:    {
-            src: LotteJacobs, alt: "Portret",
+        avatar: {
+            src: undefined, alt: "Portret",
         },
         tasks:     ["Secretaris", "PR-verantwoordelijke", "Sportfeestverantwoordelijke", "Kledijverantwoordelijke", "K-verantwoordelijke"],
     }, {
         firstname: "Maarten", lastname: "Van Goey", mail: "maarten.van.goey@kljstekene.be", avatar: {
-            src: MaartenVanGoey, alt: "Portret",
+            src: undefined, alt: "Portret",
         }, tasks:  ["Technische dienst", "Drankverantwoordelijke"],
     }, {
         firstname: "Onno", lastname: "Van Aken", mail: "onno.van.aken@kljstekene.be", avatar: {
-            src: OnnoVanAken, alt: "Portret",
+            src: undefined, alt: "Portret",
         }, tasks:  ["GEM", "Bestuursanimatieverantwoordelijke"],
     }, {
         firstname: "Robin", lastname: "Meerschaert", mail: "robin.meerschaert@kljstekene.be", avatar: {
-            src: RobinMeerschaert, alt: "Portret",
+            src: undefined, alt: "Portret",
         }, tasks:  ["Jeugdraadslid", "Technische dienst", "Cramme-verantwoordelijke"],
     }, {
         firstname: "Yoran",
         lastname:  "Selis",
         mail:      "yoran.selis@kljstekene.be",
-        avatar:    {
-            src: YoranSelis, alt: "Portret",
+        avatar: {
+            src: undefined, alt: "Portret",
         },
         tasks:     ["Secretaris", "Sportfeestverantwoordelijke", "Drankverantwoordelijke", "Lokaalverhuurverantwoordelijke"],
     }, {
