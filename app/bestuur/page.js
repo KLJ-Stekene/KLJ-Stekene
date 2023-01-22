@@ -1,7 +1,5 @@
 "use client";
 
-import groupspicture from "#/public/assets/img/boardmember/bestuur2022.JPG";
-
 import {Fragment, memo} from "react";
 import {Card, CardMedia, Container, Grid, Typography} from "@mui/material";
 import {BoardMemberCard} from "#/components/board/boardMemberCard";
@@ -26,7 +24,8 @@ const Main = memo(() => {
         <Card sx={{marginBottom: 2}}>
             <CardMedia>
                 <div style={{position: 'relative', width: '100%', aspectRatio: "16/9"}}>
-                    <Image src={groupspicture} alt={"KLJ Stekene's bestuur van 2022"} fill quality={25} priority/>
+                    <Image src={"/assets/img/boardmember/bestuur2022.JPG"} alt={"KLJ Stekene's bestuur van 2022"}
+                           fill quality={25} priority/>
                 </div>
             </CardMedia>
         </Card>
