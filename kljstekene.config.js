@@ -3,11 +3,11 @@ import FacebookOutlined from "@mui/icons-material/FacebookOutlined";
 import Instagram from "@mui/icons-material/Instagram";
 
 export const companyInfo = {
-    name:                                                       "KLJ Stekene", socialMedia: [{
+    name:        "KLJ Stekene", socialMedia: [{
         icon: <FacebookOutlined/>, href: "https://facebook.com/KljStekene",
     }, {
         icon: <Instagram/>, href: "https://instagram.com/kljstekene",
-    }], aboutUs:                                                [{
+    }], aboutUs: [{
         title:    "Wat is KLJ Stekene?",
         text:     "KLJ Stekene is een jeugdbeweging voor iedereen vanaf 16 jaar. Elke vrijdagavond komen we samen in ons lokaal voor een leuke activiteit zoals een basspel, quiz, dropping, flodderdag, ruige spelen of zwemmen. Bovendien is er elk jaar een fantastisch kamp en een weekend. In de zomermaanden zitten we ook niet stil! Dan neemt onze KLJ deel aan wekelijkse sportfeesten en houden we een heus feestweekend met barbeque en fuif.",
         gridSize: {xs: 1, sm: 2, md: 3},
@@ -158,7 +158,12 @@ export const globalNavigation = [{
 }];
 
 export const pageContent = {
-    overons:    {
+    index:      {
+        title:        "De beste jeugdbeweging, ook in Stekene!",
+        subtitle:     "Ja ja... dure woorden, maar kom eens kijken en geloof met je eigen ogen!",
+        bannerImage:  {src: "/assets/img/events/2022Weekend.JPEG", alt: "groepsfoto van het weekend van 2022"},
+        errorMessage: "Je kan ons momenteel niet bereiken via mail! De alternatieven zijn onze sociale media: Facebook en Instagram.",
+    }, overons: {
         title: "Over ons",
     }, bestuur: {
         title:       "Bestuur",
