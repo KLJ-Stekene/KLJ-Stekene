@@ -1,11 +1,11 @@
 "use client";
 
 import {Fragment, memo} from "react";
+import Image from "next/image";
 import {Card, CardMedia, Container, Grid, Typography} from "@mui/material";
 import {BoardMemberCard} from "#/components/board/boardMemberCard";
 
 import * as config from "#/kljstekene.config";
-import Image from "next/image";
 
 export default function Page() {
     return <Container sx={{marginTop: 2}}>
@@ -24,7 +24,8 @@ const Main = memo(() => {
         <Card sx={{marginBottom: 2}}>
             <CardMedia>
                 <div style={{position: 'relative', width: '100%', aspectRatio: "16/9"}}>
-                    <Image src={"/assets/img/boardmember/bestuur2022.JPG"} alt={"KLJ Stekene's bestuur van 2022"}
+                    <Image src={config.pageContent.bestuur.bannerImage.src}
+                           alt={config.pageContent.bestuur.bannerImage.alt}
                            fill quality={25} priority/>
                 </div>
             </CardMedia>
