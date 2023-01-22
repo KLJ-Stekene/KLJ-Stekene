@@ -41,11 +41,11 @@ export const companyInfo = {
         buttons:  [],
         media:    undefined,
     }, {
-        title: "Wanneer is KLJ Stekene?",
-        text:  "Op vrijdagavond wordt er meestal 's avonds vanaf 20 uur een activiteit georganiseerd. In Juli en augustus zijn er geen activiteiten, maar worden er andere evenementen georganiseerd. Op zondagen in de vakantie nemen we ook deel aan sportfeesten. Hiervoor oefenen we een hele zomer lang.",
+        title:    "Wanneer is KLJ Stekene?",
+        text:     "Op vrijdagavond wordt er meestal 's avonds vanaf 20 uur een activiteit georganiseerd. In Juli en augustus zijn er geen activiteiten, maar worden er andere evenementen georganiseerd. Op zondagen in de vakantie nemen we ook deel aan sportfeesten. Hiervoor oefenen we een hele zomer lang.",
         gridSize: {xs: 1, sm: 1, md: 1},
         buttons:  [],
-        media: undefined,
+        media:    undefined,
     }, {
         title:     "Locatie", text: undefined, gridSize: {xs: 1, sm: 2, md: 3}, buttons: [{
             text: "Openen in kaarten",
@@ -58,11 +58,11 @@ export const companyInfo = {
                               }}
                               src={"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.7166528421994!2d4.035102815937717!3d51.20587254052515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c38612daa95979%3A0x6ea12edb2df41fc1!2sKLJ%20Stekene!5e0!3m2!1snl!2sbe!4v1663328740969!5m2!1snl!2sbe"}/>,
     }, {
-        title:   "Weekend",
-        text:    "Weekend is een 3-daagse die meestal rond de krokusvakantie valt. We vertrekken vrijdagavond vol vreugde en komen zondagavond moe terug. De prijs van dit weekend bedraagt 40 euro voor overnachting, maaltijden en een tal van activiteiten.",
+        title:    "Weekend",
+        text:     "Weekend is een 3-daagse die meestal rond de krokusvakantie valt. We vertrekken vrijdagavond vol vreugde en komen zondagavond moe terug. De prijs van dit weekend bedraagt 40 euro voor overnachting, maaltijden en een tal van activiteiten.",
         gridSize: {xs: 1, sm: 1, md: 1},
-        buttons: [],
-        media:   undefined,
+        buttons:  [],
+        media:    undefined,
     }, {
         title:    "Kamp",
         text:     "Het kamp gaat elk jaar door van 11 tot 21 juli. Gedurende die 10 dagen wordt er steeds een ochtend-, namiddag- en avondactiviteit voorzien. De prijs is hier €140 voor overnachting, maaltijden en activiteiten. De drank is hier echter zelf te betalen.",
