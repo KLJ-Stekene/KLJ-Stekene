@@ -160,11 +160,11 @@ export const globalNavigation = [{
 ];
 
 export const pageContent = {
-    index:      {
+    index: {
         title:        "De beste jeugdbeweging, ook in Stekene!",
         subtitle:     "Ja ja... dure woorden, maar kom eens kijken en geloof met je eigen ogen!",
         bannerImage:  {src: "/assets/img/events/2022Weekend.JPEG", alt: "groepsfoto van het weekend van 2022"},
-        errorMessage: "Je kan ons momenteel niet bereiken via mail! De alternatieven zijn onze sociale media: Facebook en Instagram.",
+        errorMessage: undefined,
     }, overons: {
         title: "Over ons",
     }, bestuur: {
