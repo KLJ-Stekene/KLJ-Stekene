@@ -17,7 +17,7 @@ export default function Page() {
         {name: "Mail", text: "Email me!", url: "https://gmail.com"},
     ];
 
-    return <main className={"min-h-[calc(100vh-72px-56px)] container mx-auto p-2"}>
+    return <main className={"min-h-[calc(100svh-72px-56px)] container mx-auto p-2"}>
         <div className={"flex flex-col gap-1"}>
             <Image className={"first:rounded-t-lg rounded-sm"} src={profilePictureURL} alt={"Jens"} width={2638} height={2638}/>
             <h2 className={"bg-gray-100 dark:bg-gray-900 first:rounded-t-lg rounded-sm p-2 text-xl"}>{firstName} {lastName}</h2>

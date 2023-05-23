@@ -50,16 +50,16 @@ export default function RootLayout({
             <Link href={"/"} className={"bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 flex-grow-0 flex-shrink-0 rounded-s-lg rounded-e-sm h-14 p-2 aspect-square"}>
                 <Image src={"/KLJ.svg"} alt={"Het KLJ logo"} width={1} height={1} className={"w-full h-full"}/>
             </Link>
-            <div className={"bg-blue-100 dark:bg-blue-900 flex-grow flex-shrink rounded-sm overflow-x-auto no-scrollbar p-2 flex gap-1"}>
-                <Link href={"/contact"} className={"hover:bg-blue-200 dark:hover:bg-blue-800 rounded-s-lg rounded-e-sm px-4 py-2 uppercase"}>Contact</Link>
-                <Link href={"/evenementen"} className={"hover:bg-blue-200 dark:hover:bg-blue-800 rounded-sm px-4 py-2 uppercase"}>Evenementen</Link>
-                <Link href={"/sponsors"} className={"hover:bg-blue-200 dark:hover:bg-blue-800 rounded-s-sm rounded-e-lg px-4 py-2 uppercase"}>Sponsors</Link>
+            <div className={"bg-blue-100 dark:bg-blue-900 flex-grow flex-shrink rounded-sm overflow-x-auto no-scrollbar flex gap-1"}>
+                <Link href={"/contact"} className={"hover:bg-blue-200 dark:hover:bg-blue-800 rounded-sm p-4 uppercase"}>Contact</Link>
+                <Link href={"/evenementen"} className={"hover:bg-blue-200 dark:hover:bg-blue-800 rounded-sm p-4 uppercase"}>Evenementen</Link>
+                <Link href={"/sponsors"} className={"hover:bg-blue-200 dark:hover:bg-blue-800 rounded-sm p-4 uppercase"}>Sponsors</Link>
             </div>
-            <Link href={"mailto:allebestuur@kljstekene.be"} className={"bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 flex-grow-0 flex-shrink-0 rounded-s-sm rounded-e-lg h-14 flex items-center px-4 py-2 uppercase"}>Mail</Link>
+            <Link href={"mailto:allebestuur@kljstekene.be"} target={"_blank"} className={"bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 flex-grow-0 flex-shrink-0 rounded-s-sm rounded-e-lg h-14 flex items-center px-4 py-2 uppercase"}>Mail</Link>
         </header>
         {children}
         <footer className={"w-full container mx-auto p-2 print:hidden"}>
-            <div className={"bg-gray-100 dark:bg-gray-900 rounded-lg w-full px-4 py-2"}>Created by <Link href={"https://web-4-you.be"} target={"_blank"}>WEB4YOU</Link></div>
+            <p className={"bg-gray-100 dark:bg-gray-900 rounded-lg w-full p-2 font-extralight"}>Created by <Link href={"https://web-4-you.be"} target={"_blank"}>WEB4YOU</Link></p>
         </footer>
         </body>
         </html>
