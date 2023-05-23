@@ -7,6 +7,9 @@ export const metadata = {
 
 export default function ContactNL() {
     return <main className={"min-h-[calc(100svh-72px-56px)] print:min-h[100svh] flex flex-col gap-2"}>
+        <section className={"container mx-auto px-2"}>
+            <p className={"bg-yellow-100 dark:bg-yellow-900 rounded-lg p-2"}>De website is nog niet klaar! In andere woorden: niet alle mailadressen en of contact punten van onze jeugdbeweging zijn zichtbaar.</p>
+        </section>
         <section className={"container mx-auto grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 print:grid-cols-3 gap-2 px-2"}>
             <div className={"flex flex-col gap-1"}>
                 <Image priority className={"first:rounded-t-lg rounded-sm w-full"} src={"/assets/img/boardmember/2022/ambervanmoeseke.jpg"} alt={"Amber's gezicht"} width={380} height={380}/>
