@@ -23,12 +23,12 @@ export const metadata = {
     //TODO Apple tags toevoegen: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#applewebapp
     //TODO Icons toevoegen: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#icons
     robots: {
-        index: false,
+        index: true,
         follow: true,
         nocache: true,
         googleBot: {
             index: true,
-            follow: false,
+            follow: true,
             noimageindex: true,
             "max-video-preview": -1,
             "max-image-preview": "large",
