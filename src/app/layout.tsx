@@ -53,7 +53,6 @@ export default function RootLayout({
             <div className={"bg-blue-100 dark:bg-blue-900 flex-grow flex-shrink rounded-sm overflow-x-auto no-scrollbar flex gap-1"}>
                 <Link href={"/contact"} className={"hover:bg-blue-200 dark:hover:bg-blue-800 rounded-sm p-4 uppercase"}>Contact</Link>
                 <Link href={"/evenementen"} className={"hover:bg-blue-200 dark:hover:bg-blue-800 rounded-sm p-4 uppercase"}>Evenementen</Link>
-                <Link href={"/sponsors"} className={"hover:bg-blue-200 dark:hover:bg-blue-800 rounded-sm p-4 uppercase"}>Sponsors</Link>
             </div>
             <Link href={"mailto:allebestuur@kljstekene.be"} target={"_blank"} className={"bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 flex-grow-0 flex-shrink-0 rounded-s-sm rounded-e-lg h-14 flex items-center px-4 py-2 uppercase"}>Mail</Link>
         </header>

@@ -220,6 +220,7 @@ const siteConfig = {
         {
             URL: "HastaBanana2023",
             name: "Hasta Bañana",
+            description: "Hasta is één van de beste fuiven in Stekene. En dit al sinds 1997.",
             start: new Date("2023-08-05T21:00:00+02:00"),
             end: new Date("2023-08-06T04:00:00+02:00"),
             tickets: {
