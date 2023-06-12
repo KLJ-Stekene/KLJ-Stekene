@@ -39,7 +39,7 @@ export const metadata = {
 
 export default function IndexNL() {
     return <main className={"min-h-[calc(100svh-72px-56px)] print:min-h[100svh] flex flex-col gap-2"}>
-        <figure className={"container mx-auto transition-all duration-300 h-[calc(100svh-72px)] last:h-[calc(100svh-72px-56px)] print:h-[100svh] relative px-2"}>
+        <figure className={"container mx-auto transition-all duration-300 h-[calc(100svh-72px+0.5rem)] last:h-[calc(100svh-72px-56px+0.5rem)] print:h-[100svh] relative px-2"}>
             <Image priority className={"h-full object-cover rounded-lg"} src={"/assets/img/events/2022Weekend.JPEG"} alt={""} width={1669} height={938}/>
             <figcaption className={"absolute sm:w-1/2 w-2/3 text-white transform-gpu top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-2 rounded-lg backdrop-blur-sm lg:backdrop-blur font-extrabold"}>
                 <svg className={"w-full"} viewBox={"0 0 100 15"}>
