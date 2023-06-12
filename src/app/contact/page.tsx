@@ -4,6 +4,51 @@ import siteConfig from "@/site.config";
 
 export const metadata = {
     title: "Contact",
+    description: "Wil je ons bereiken? Alle contact media is te vinden op deze pagina!",
+
+    openGraph: {
+        title: "Contact",
+        description: "Wil je ons bereiken? Alle contact media is te vinden op deze pagina!",
+        siteName: "KLJ Stekene",
+        url: "https://www.kljstekene.be/contact",
+        type: "website",
+        locale: "nl-BE",
+        images: [
+            {
+                alt: "KLJ Stekene's bestuur",
+                url: "/assets/img/boardmember/2022/groepsfoto.jpg",
+                width: 5581,
+                height: 3139,
+                type: "image/jpeg",
+            },
+        ],
+    },
+    twitter: {
+        title: "Contact",
+        description: "Wil je ons bereiken? Alle contact media is te vinden op deze pagina!",
+        creator: "@JensPenneman",
+        creatorId: "3372038091",
+        card: "summary_large_image",
+        images: ["/assets/img/boardmember/2022/groepsfoto.jpg"],
+    },
+    //TODO Apple tags toevoegen: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#applewebapp
+    //TODO Icons toevoegen: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#icons
+    robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+        noarchive: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            noimageindex: true,
+            notranslate: true,
+            noarchive: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
+    },
 };
 
 export default function ContactNL() {
@@ -16,7 +61,7 @@ export default function ContactNL() {
             {siteConfig.bestuur.leden
                 .map((bestuurslid, index) =>
                     <div key={index} className={"flex flex-col gap-1"}>
-                        <Image priority className={"first:rounded-t-lg rounded-sm w-full"} src={bestuurslid.avatar} alt={bestuurslid.firstname + "'s gezicht"} width={380} height={380}/>
+                        <Image className={"first:rounded-t-lg rounded-sm w-full"} src={bestuurslid.avatar} alt={bestuurslid.firstname + "'s gezicht"} width={380} height={380}/>
                         <h3 className={"bg-gray-100 dark:bg-gray-900 first:rounded-t-lg rounded-sm p-2 text-xl font-semibold"}>{bestuurslid.firstname} {bestuurslid.lastname}</h3>
                         <ul className={"bg-gray-100 dark:bg-gray-900 rounded-sm flex flex-col flex-grow gap-1"}>
                             {bestuurslid.tasklist
