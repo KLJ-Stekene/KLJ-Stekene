@@ -56,11 +56,14 @@ export const metadata = {
 
 export default function ContactNL() {
     return <main className={"min-h-[calc(100svh-72px-56px)] print:min-h[100svh] flex flex-col gap-2"}>
-        <figure className={"container mx-auto h-[45svh] transition-all duration-300 relative px-2"}>
-            <Image priority className={"h-full object-cover rounded-lg"} src={"/assets/img/boardmember/2022/groepsfoto.jpg"} alt={"Groepsfoto van het bestuur"} width={1900} height={450}/>
-        </figure>
         <section className={"container mx-auto grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 print:grid-cols-3 gap-2 px-2"}>
-            <h2 className={"sm:col-span-2 lg:col-span-3 xl:col-span-4 print:col-span-3 text-center font-bold text-3xl"}>Bestuursleden</h2>
+            <div className={"flex flex-col sm:col-span-2 lg:col-span-3 xl:col-span-4 print:col-span-3 gap-1"}>
+                <div className={"h-[45svh] relative"}>
+                    <Image className={"object-cover rounded-t-lg rounded-sm"} src={"/assets/img/boardmember/2022/groepsfoto.jpg"} alt={"Groepsfoto van het bestuur"} fill/>
+                </div>
+                <h3 className={"bg-gray-100 dark:bg-gray-900 first:rounded-t-lg last:rounded-b-lg rounded-sm p-2 text-xl font-semibold text-center"}>Het volledige bestuur</h3>
+                <Link className={"bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 first:rounded-t-lg last:rounded-b-lg rounded-sm p-2 text-center"} href={"mailto:allebestuur@kljstekene.be"} target={"_blank"}>Mail ons</Link>
+            </div>
             {siteConfig.bestuur.leden
                 .map((bestuurslid, index) =>
                     <div key={index} className={"flex flex-col gap-1"}>

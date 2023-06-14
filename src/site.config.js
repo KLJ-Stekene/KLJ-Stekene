@@ -1,6 +1,5 @@
 const siteConfig = {
     bestuur: {
-        taken: [],
         leden: [
             {
                 firstname: "Amber",
