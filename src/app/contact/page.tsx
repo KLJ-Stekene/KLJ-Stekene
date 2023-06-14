@@ -6,6 +6,9 @@ export const metadata = {
     title: "Contact",
     description: "Wil je ons bereiken? Alle contact media is te vinden op deze pagina!",
 
+    alternates: {
+        canonical: "/contact",
+    },
     openGraph: {
         title: "Contact",
         description: "Wil je ons bereiken? Alle contact media is te vinden op deze pagina!",

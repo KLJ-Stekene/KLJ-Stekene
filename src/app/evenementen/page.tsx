@@ -5,6 +5,10 @@ import Link from "next/link";
 export const metadata = {
     title: "Evenementen",
     description: "Een lijst van evenementen van KLJ Stekene.",
+
+    alternates: {
+        canonical: "/evenementen",
+    },
     openGraph: {
         title: "Evenementen",
         description: "Een lijst van evenementen van KLJ Stekene.",

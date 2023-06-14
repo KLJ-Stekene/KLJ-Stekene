@@ -3,6 +3,10 @@ import Image from "next/image";
 export const metadata = {
     title: "KLJ Stekene",
     description: "De beste jeugdbeweging, ook in Stekene!",
+
+    alternates: {
+        canonical: "/",
+    },
     openGraph: {
         title: "KLJ Stekene",
         description: "De beste jeugdbeweging, ook in Stekene!",

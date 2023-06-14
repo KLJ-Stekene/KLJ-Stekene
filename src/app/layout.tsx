@@ -28,9 +28,6 @@ export const metadata = {
     metadataBase: new URL("https://www.kljstekene.be"),
     alternates: {
         canonical: "/",
-        languages: {
-            "nl-BE": "/nl-BE",
-        },
     },
     themeColor: [
         {media: "(prefers-color-scheme: light)", color: "white"},
