@@ -79,7 +79,7 @@ export default function EvenementenNL({params}: Props) {
                     <p>Prijs VVK: €{event.tickets.prijsVVK}</p>
                     <p>Prijs ADK: €{event.tickets.prijsADK}</p>
                 </div>
-                <Link className={"bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-b-lg rounded-sm p-2"} href={event.tickets.onlineURL} target={"_blank"}>Koop tickets</Link>
+                <Link className={"bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 rounded-b-lg rounded-sm p-2"} href={event.tickets.onlineURL} target={"_blank"}>Koop tickets</Link>
             </div>
             <div className={"flex flex-col gap-1"}>
                 <h3 className={"bg-gray-100 dark:bg-gray-900 rounded-sm rounded-t-lg text-xl font-semibold p-2"}>Aanvang &amp; einde</h3>
@@ -90,13 +90,23 @@ export default function EvenementenNL({params}: Props) {
                 <p className={"bg-gray-100 dark:bg-gray-900 rounded-b-lg rounded-sm uppercase p-2"} lang={"en-US"}>In = in / out = out</p>
             </div>
             <div className={"flex flex-col gap-1"}>
-                <h3 className={"bg-gray-100 dark:bg-gray-900 rounded-sm rounded-t-lg text-xl font-semibold p-2"}>Locatie</h3>
-                <div className={"bg-gray-100 dark:bg-gray-900 rounded-b-lg rounded-sm flex-grow p-2"}>
-                    <p>{event.location.name}</p>
-                    <p>{event.entry.adres.streetAndNum},</p>
-                    <p>{event.entry.adres.postalCode} {event.entry.adres.City}</p>
+                <h3 className={"bg-gray-100 dark:bg-gray-900 rounded-sm rounded-t-lg text-xl font-semibold p-2"}>Locatie &amp; ingang</h3>
+                <div className={"flex flex-col sm:flex-row flex-grow gap-1"}>
+                    <div className={"bg-gray-100 dark:bg-gray-900 sm:rounded-bl-lg rounded-sm flex-grow p-2"}>
+                        <p>{event.location.name}</p>
+                        <p>{event.location.adres.streetAndNum},</p>
+                        <p>{event.location.adres.postalCode} {event.location.adres.City}</p>
+                    </div>
+                    <div className={"bg-gray-100 dark:bg-gray-900 sm:rounded-br-lg rounded-sm flex-grow p-2"}>
+                        <p>{event.entry.name}</p>
+                        <p>{event.entry.adres.streetAndNum},</p>
+                        <p>{event.entry.adres.postalCode} {event.entry.adres.City}</p>
+                    </div>
                 </div>
             </div>
+            <iframe className={"bg-gray-100 dark:bg-gray-900 rounded-lg sm:col-span-2 lg:col-span-3 h-[40vh] print:hidden"} width={"100%"} height={"100%"}
+                    src={event.entry.iFrameURL} allowFullScreen loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade" title={"KLJ Stekene's Google Maps location"}/>
         </section>
         <section className={"container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 gap-2 px-2"}>
             <h2 className={"bg-gray-100 dark:bg-gray-900 rounded-lg sm:col-span-2 lg:col-span-3 print:col-span-3 text-2xl font-bold text-center p-2"}>Line-up</h2>
