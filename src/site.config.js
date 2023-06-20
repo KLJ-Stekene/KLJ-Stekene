@@ -246,12 +246,12 @@ const siteConfig = {
                 iFrameURL: undefined,
             },
             lineup: [
-                {name: "Louis XIV", TBA: true, image: "/assets/img/events/2023/HastaBanana/logo.png"},
+                {name: "Louis XIV", TBA: false, image: "/assets/img/events/2023/HastaBanana/DJ-LOUIS2.png"},
                 {name: "Waddox", TBA: false, image: "/assets/img/events/2023/HastaBanana/DJ-WADDOX.png"},
-                {name: "Mattic", TBA: true, image: "/assets/img/events/2023/HastaBanana/logo.png"},
+                {name: "Mattic", TBA: true, image: "/assets/img/events/2023/HastaBanana/DJ-MATTIC.png"},
                 {name: "Nive & Neekid", TBA: false, image: "/assets/img/events/2023/HastaBanana/DJ-Nive&Neekid.png"},
                 {name: "Madibazz", TBA: false, image: "/assets/img/events/2023/HastaBanana/DJ-MADIBAZZ.png"},
-                {name: "DJ Jarno", TBA: true, image: "/assets/img/events/2023/HastaBanana/logo.png"},
+                {name: "DJ Jarno", TBA: true, image: "/assets/img/events/2023/HastaBanana/DJ-JarnoWauters.png"},
             ],
             images: {
                 logo: "/assets/img/events/2023/HastaBanana/logo.png",
