@@ -248,7 +248,7 @@ const siteConfig = {
             lineup: [
                 {name: "Louis XIV", TBA: false, image: "/assets/img/events/2023/HastaBanana/DJ-LOUIS2.png"},
                 {name: "Waddox", TBA: false, image: "/assets/img/events/2023/HastaBanana/DJ-WADDOX.png"},
-                {name: "Mattic", TBA: true, image: "/assets/img/events/2023/HastaBanana/DJ-MATTIC.png"},
+                {name: "Mattic", TBA: false, image: "/assets/img/events/2023/HastaBanana/DJ-MATTIC.png"},
                 {name: "Nive & Neekid", TBA: false, image: "/assets/img/events/2023/HastaBanana/DJ-Nive&Neekid.png"},
                 {name: "Madibazz", TBA: false, image: "/assets/img/events/2023/HastaBanana/DJ-MADIBAZZ.png"},
                 {name: "DJ Jarno", TBA: true, image: "/assets/img/events/2023/HastaBanana/DJ-JarnoWauters.png"},
