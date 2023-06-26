@@ -86,12 +86,12 @@ export default function EvenementenNL({params}: Props) {
                 </div>
             }
             <div className={"flex flex-col gap-1"}>
-                <h3 className={"bg-gray-100 dark:bg-gray-900 rounded-sm rounded-t-lg text-xl font-semibold p-2"}>Aanvang &amp; einde</h3>
-                <div className={"bg-gray-100 dark:bg-gray-900 rounded-sm p-2"}>
+                <h3 className={"bg-gray-100 dark:bg-gray-900 first:rounded-t-lg last:rounded-b-lg rounded-sm text-xl font-semibold p-2"}>Aanvang &amp; einde</h3>
+                <div className={"bg-gray-100 dark:bg-gray-900 last:rounded-b-lg rounded-sm p-2"}>
                     {!!event.start && <p>Aanvang: {event.start.toLocaleString("nl-BE", {dateStyle: "long", timeStyle: "short"})}</p>}
                     {!!event.end && <p>Einde: {event.end.toLocaleString("nl-BE", {dateStyle: "long", timeStyle: "short"})}</p>}
                 </div>
-                <p className={"bg-gray-100 dark:bg-gray-900 rounded-b-lg rounded-sm uppercase p-2"} lang={"en-US"}>In = in / out = out</p>
+                {!!event.inIsInOutIsOut && <p className={"bg-gray-100 dark:bg-gray-900 last:rounded-b-lg rounded-sm uppercase p-2"} lang={"en-US"}>In = in / out = out</p>}
             </div>
             <div className={"flex flex-col gap-1"}>
                 <h3 className={"bg-gray-100 dark:bg-gray-900 rounded-sm rounded-t-lg text-xl font-semibold p-2"}>Locatie &amp; ingang</h3>

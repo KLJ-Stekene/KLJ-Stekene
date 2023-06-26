@@ -222,6 +222,7 @@ const siteConfig = {
             description: "Hasta is één van de beste fuiven in Stekene. En dit al sinds 1997.",
             start: new Date("2023-08-05T21:00:00+02:00"),
             end: new Date("2023-08-06T04:00:00+02:00"),
+            inIsInOutIsOut: true,
             tickets: {
                 prijsVVK: 8,
                 prijsADK: 10,
@@ -270,6 +271,7 @@ const siteConfig = {
             description: "De gezellige barbeque om ons jaarlijks feestweekend te starten.",
             start: new Date("2023-08-04T19:00:00+02:00"),
             end: new Date("2023-08-05T04:00:00+02:00"),
+            inIsInOutIsOut: false,
             tickets: {
                 prijsVVK: "12+",
                 prijsADK: undefined,
