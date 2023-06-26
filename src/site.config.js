@@ -280,7 +280,7 @@ const siteConfig = {
             entry: {
                 name: "Ingang",
                 adres: {
-                    streetAndNum: "Dorpstraat 42",
+                    streetAndNum: "Sparrenhofdreef 25A",
                     postalCode: 9190,
                     City: "Stekene",
                 },
