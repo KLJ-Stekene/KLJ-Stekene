@@ -32,7 +32,7 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
                     alt: "Teaser",
                     url: event.images.teaser,
                     type: "image/png",
-                }
+                },
             ],
         },
         twitter: {
@@ -120,6 +120,15 @@ export default function EvenementenNL({params}: Props) {
                     .map((dj, index) => <div key={index} className={"flex flex-col gap-1"}>
                             <Image className={"first:rounded-t-lg rounded-sm w-full"} src={dj.image} alt={dj.name + "'s gezicht"} width={380} height={380}/>
                             <h3 className={"bg-gray-100 dark:bg-gray-900 last:rounded-b-lg rounded-sm p-2 text-xl font-semibold"}>{dj.name}</h3>
+                        </div>,
+                    )
+                }
+                {event.lineup
+                    .filter((dj) => dj.TBA === true)
+                    .map((dj, index) => <div key={index} className={"flex flex-col gap-1 relative"}>
+                            <div className={"rounded-t-lg rounded-sm w-full aspect-square backdrop-blur-3xl z-50"}/>
+                            <Image className={"rounded-t-lg rounded-sm w-full aspect-square absolute z-40"} src={dj.image} alt={dj.name + "'s gezicht"} width={380} height={380}/>
+                            <h3 className={"bg-gray-100 dark:bg-gray-900 last:rounded-b-lg rounded-sm p-2 text-xl font-semibold"}>Nog aan te kondigen!</h3>
                         </div>,
                     )
                 }
