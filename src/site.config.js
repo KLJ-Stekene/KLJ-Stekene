@@ -225,7 +225,7 @@ const siteConfig = {
             tickets: {
                 prijsVVK: 8,
                 prijsADK: 10,
-                onlineURL: "https://shop.kljstekene.be/hb2023",
+                onlineURL: "https://shop.kljstekene.be/feestweekend2023",
             },
             entry: {
                 name: "Ingang",
@@ -257,6 +257,47 @@ const siteConfig = {
                 logo: "/assets/img/events/2023/HastaBanana/logo.png",
                 teaser: "/assets/img/events/2023/HastaBanana/teaser.png",
                 banner: "/assets/img/events/2023/HastaBanana/banner.png",
+            },
+            socialMedia: [
+                {text: "Facebook", URL: "https://www.facebook.com/events/380058184284344"},
+                {text: "Instagram", URL: "https://www.instagram.com/hastabananastekene/"},
+                {text: "Email", URL: "mailto:events@kljstekene.be"},
+            ],
+        },
+        {
+            URL: "BBQ2023",
+            name: "Barbeque",
+            description: "De gezellige barbeque om ons jaarlijks feestweekend te starten.",
+            start: new Date("2023-08-04T19:00:00+02:00"),
+            end: new Date("2023-08-05T04:00:00+02:00"),
+            tickets: {
+                prijsVVK: "12+",
+                prijsADK: undefined,
+                onlineURL: "https://shop.kljstekene.be/feestweekend2023",
+            },
+            entry: {
+                name: "Ingang",
+                adres: {
+                    streetAndNum: "Dorpstraat 42",
+                    postalCode: 9190,
+                    City: "Stekene",
+                },
+                iFrameURL: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.775399032306!2d4.03660937697021!3d51.20479013276445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c386128901dc75%3A0xb24f46844436ed86!2sDorpsstraat%2042%2C%209190%20Stekene!5e0!3m2!1snl!2sbe!4v1686575480265!5m2!1snl!2sbe",
+            },
+            location: {
+                name: "KLJ Stekene",
+                adres: {
+                    streetAndNum: "Sparrenhofdreef 25A",
+                    postalCode: 9190,
+                    City: "Stekene",
+                },
+                iFrameURL: undefined,
+            },
+            lineup: undefined,
+            images: {
+                logo: undefined,
+                teaser: "/assets/img/events/2023/BBQ/banner.jpg",
+                banner: "/assets/img/events/2023/BBQ/banner.jpg",
             },
             socialMedia: [
                 {text: "Facebook", URL: "https://www.facebook.com/events/380058184284344"},

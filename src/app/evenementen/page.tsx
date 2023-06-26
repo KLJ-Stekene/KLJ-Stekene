@@ -51,12 +51,16 @@ export default function EvenementenNL() {
                 .map((event, index) =>
                     <div key={index} className={"flex flex-col gap-1"}>
                         <div className={"flex flex-row gap-1"}>
-                            <div className={"h-full aspect-square relative"}>
-                                <Image className={"object-fit rounded-tl-lg rounded-sm"} src={event.images.logo} alt={event.name + "'s logo"} fill/>
-                            </div>
-                            <h3 className={"flex-grow bg-gray-100 dark:bg-gray-900 last:rounded-tr-lg rounded-sm p-2 text-xl font-semibold"}>{event.name}</h3>
+                            {!!event.images && !!event.images.logo &&
+                                <div className={"h-full aspect-square relative"}>
+                                    <Image className={"object-fit rounded-tl-lg rounded-sm"} src={event.images.logo} alt={event.name + "'s logo"} fill/>
+                                </div>
+                            }
+                            <h3 className={"flex-grow bg-gray-100 dark:bg-gray-900 first:rounded-tl-lg last:rounded-tr-lg rounded-sm p-2 text-xl font-semibold"}>{event.name}</h3>
                         </div>
-                        <Image className={"rounded-sm w-full"} src={event.images.teaser} alt={event.name + "'s teaser"} width={381} height={380}/>
+                        {!!event.images && !!event.images.teaser &&
+                            <Image className={"w-full object-cover aspect-square rounded-sm"} src={event.images.teaser} alt={event.name + "'s teaser"} width={381} height={380}/>
+                        }
                         <div className={"flex flex-row gap-1"}>
                             <Link key={index} className={"bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 first:rounded-bl-lg rounded-sm last:rounded-br-lg last:flex-grow last:print:truncate p-2"} href={event.tickets.onlineURL} target={"_blank"}>Tickets</Link>
                             <Link key={index} className={"bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 first:rounded-bl-lg rounded-sm last:rounded-br-lg last:flex-grow last:print:truncate p-2"} href={"evenementen/" + event.URL}>Meer info</Link>
