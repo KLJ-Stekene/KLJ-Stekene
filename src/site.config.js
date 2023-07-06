@@ -220,8 +220,8 @@ const siteConfig = {
             URL: "HastaBanana2023",
             name: "Hasta Bañana",
             description: "Hasta is één van de beste fuiven in Stekene. En dit al sinds 1997.",
-            start: new Date("2023-08-05T21:00:00+02:00"),
-            end: new Date("2023-08-06T04:00:00+02:00"),
+            start: new Date("2023-08-05T21:00:00"),
+            end: new Date("2023-08-06T04:00:00"),
             inIsInOutIsOut: true,
             tickets: {
                 prijsVVK: 8,
@@ -269,8 +269,8 @@ const siteConfig = {
             URL: "BBQ2023",
             name: "Barbeque",
             description: "De gezellige barbeque om ons jaarlijks feestweekend te starten.",
-            start: new Date("2023-08-04T19:00:00+02:00"),
-            end: new Date("2023-08-05T04:00:00+02:00"),
+            start: new Date("2023-08-04T19:00:00"),
+            end: new Date("2023-08-05T04:00:00"),
             inIsInOutIsOut: false,
             tickets: {
                 prijsVVK: "12+",
