@@ -1,5 +1,5 @@
+import siteConfig from "@/site.config"
 import {Metadata} from "next";
-import siteConfig from "@/site.config";
 import {notFound} from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -64,7 +64,7 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
     };
 }
 
-export default function EvenementenNL({params}: Props) {
+export default async function page({params}: Props) {
     const eventURL = params.event;
     const event = siteConfig.evenementen.find((event) => event.URL === eventURL);
     if (event === undefined) notFound();
@@ -72,7 +72,8 @@ export default function EvenementenNL({params}: Props) {
     return <main className={"min-h-[calc(100svh-72px-56px)] print:min-h[100svh] flex flex-col gap-2"}>
         <section className={"container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 gap-2 px-2"}>
             {!!event.images && !!event.images.banner &&
-                <Image className={"w-full min-h-[35svh] max-h-[65svh] object-cover sm:col-span-2 lg:col-span-3 print:col-span-3 rounded-lg"} priority src={event.images.banner} alt={event.name + "'s banner"} width={1900} height={400}/>
+                <Image className={"w-full min-h-[35svh] max-h-[65svh] object-cover sm:col-span-2 lg:col-span-3 print:col-span-3 rounded-lg"} priority src={event.images.banner}
+                       alt={event.name + "'s banner"} width={1900} height={400}/>
             }
             <h1 className={"bg-gray-100 dark:bg-gray-900 rounded-lg sm:col-span-2 lg:col-span-3 print:col-span-3 text-3xl font-bold text-center p-2"}>{event.name}</h1>
             {!!event.tickets && (!!event.tickets.prijsVVK || !!event.tickets.prijsVVK) &&
@@ -82,7 +83,8 @@ export default function EvenementenNL({params}: Props) {
                         {!!event.tickets.prijsVVK && <p>Prijs voorverkoop: €{event.tickets.prijsVVK}</p>}
                         {!!event.tickets.prijsADK && <p>Prijs aan de kassa: €{event.tickets.prijsADK}</p>}
                     </div>
-                    <Link className={"bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 rounded-b-lg rounded-sm p-2"} href={event.tickets.onlineURL} target={"_blank"}>Koop tickets</Link>
+                    <Link className={"bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 rounded-b-lg rounded-sm p-2"} href={event.tickets.onlineURL} target={"_blank"}>Koop
+                        tickets</Link>
                 </div>
             }
             <div className={"flex flex-col gap-1"}>
@@ -134,5 +136,5 @@ export default function EvenementenNL({params}: Props) {
                 }
             </section>
         }
-    </main>;
+    </main>
 }
