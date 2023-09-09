@@ -217,6 +217,43 @@ const siteConfig = {
     },
     evenementen: [
         {
+            URL: "Startactiviteit2023",
+            name: "Startactiviteit",
+            description: "Op 22 september start het nieuwe werkjaar van KLJ Stekene! Een +16 jeugdbeweging waar je elke vrijdag om 20u je helemaal kan uitleven. We zijn een zotte bende die klaarstaan om jullie te verwelkomen! Ben je geboren in 2008 (of vroeger)? Kom dan kennis maken op vrijdag 22 september en neem je vrienden mee! Kom jij met de grootste vriendengroep aan op onze startactiviteit? Dan winnen jullie een prijs! Ook altijd welkom op andere vrijdag om 20u aan ons lokaal.",
+            start: new Date("2023-09-22T20:00:00"),
+            end: new Date("2023-09-22T22:00:00"),
+            inIsInOutIsOut: false,
+            tickets: {
+                prijsVVK: 0,
+                prijsADK: 0,
+                onlineURL: undefined,
+            },
+            entry: {
+                name: "Ingang",
+                adres: {
+                    streetAndNum: "Sparrenhofdreef 25A",
+                    postalCode: 9190,
+                    City: "Stekene",
+                },
+                iFrameURL: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.716835679411!2d4.034716577170068!3d51.205869171746365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c38612daa95979%3A0x6ea12edb2df41fc1!2sKLJ%20Stekene!5e0!3m2!1snl!2sbe!4v1694267673967!5m2!1snl!2sbe",
+            },
+            location: {
+                name: "KLJ Stekene",
+                adres: {
+                    streetAndNum: "Sparrenhofdreef 25A",
+                    postalCode: 9190,
+                    City: "Stekene",
+                },
+                iFrameURL: undefined,
+            },
+            images: {
+                logo: "/assets/img/events/2023/Startactiviteit/Flyer.jpg",
+                teaser: "/assets/img/events/2023/Startactiviteit/Flyer.jpg",
+                banner: "/assets/img/events/2023/Startactiviteit/Flyer.jpg",
+            },
+            socialMedia: [],
+        },
+        {
             URL: "HastaBanana2023",
             name: "Hasta Bañana",
             description: "Hasta is één van de beste fuiven in Stekene. En dit al sinds 1997.",

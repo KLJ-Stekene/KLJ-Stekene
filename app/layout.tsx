@@ -6,6 +6,7 @@ import NavigationHeaderLink from "@/components/navigation/navigation-header-link
 import NavigationFooter from "@/components/navigation/navigation-footer";
 import NavigationFooterLink from "@/components/navigation/navigation-footer-link";
 import NavigationFooterText from "@/components/navigation/navigation-footer-text";
+import UpcomingEventsAnnouncement from "@/components/events/upcoming-events-announcement";
 
 export const metadata: Metadata = {
     title: {
@@ -43,6 +44,7 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
         <NavigationHeaderLink href={"/contact"}>Contact</NavigationHeaderLink>
         <NavigationHeaderLink href={"/evenementen"}>Evenementen</NavigationHeaderLink>
     </NavigationHeader>
+    <UpcomingEventsAnnouncement/>
     {children}
     <NavigationFooter>
         <NavigationFooterLink href={"https://www.facebook.com/KljStekene"} target={"_blank"}>Facebook</NavigationFooterLink>

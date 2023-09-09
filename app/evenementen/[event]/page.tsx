@@ -83,7 +83,7 @@ export default async function page({params}: Props) {
                         {!!event.tickets.prijsVVK && <p>Prijs voorverkoop: €{event.tickets.prijsVVK}</p>}
                         {!!event.tickets.prijsADK && <p>Prijs aan de kassa: €{event.tickets.prijsADK}</p>}
                     </div>
-                    <Link className={"bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 rounded-b-lg rounded-sm p-2"} href={event.tickets.onlineURL} target={"_blank"}>Koop
+                    <Link className={"bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 rounded-b-lg rounded-sm p-2"} href={event.tickets.onlineURL || ""} target={"_blank"}>Koop
                         tickets</Link>
                 </div>
             }
