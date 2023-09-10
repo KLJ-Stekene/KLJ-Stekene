@@ -2,6 +2,141 @@ const siteConfig = {
     bestuur: {
         leden: [
             {
+                firstname: "Amber", lastname: "Van Moeseke",
+                tasklist: [
+                    "Sportfeestverantwoordelijke",
+                    "Drank- en chipsverantwoordelijke",
+                    "Foto-verantwoordelijke",
+                ],
+                avatar: "/assets/img/boardmember/2023/ambervanmoeseke.jpg",
+            },
+            {
+                firstname: "Ewald", lastname: "Tindemans",
+                tasklist: [
+                    "Gewestraadslid",
+                    "Sportfeestverantwoordelijke",
+                ],
+                avatar: "/assets/img/boardmember/2023/ewaldtindemans.jpg",
+            },
+            {
+                firstname: "Febe", lastname: "Meerschaert",
+                tasklist: [
+                    "PR-verantwoordelijke",
+                    "Sportfeestverantwoordelijke",
+                    "EHBO-verantwoordelijke",
+                    "Verjaardag- en prikbordverantwoordelijke"
+                ],
+                avatar: "/assets/img/boardmember/2023/febemeerschaert.jpg",
+            },
+            {
+                firstname: "Feniks", lastname: "Van Vooren",
+                tasklist: [
+                    "Gewestraadslid",
+                    "PR-verantwoordelijke",
+                    "Sportfeestverantwoordelijke",
+                    "Redactie 'T Gemakske",
+                    "Websiteverantwoordelijke",
+                ],
+                avatar: "/assets/img/boardmember/2023/feniksvanvooren.jpg",
+            },
+            {
+                firstname: "Jarno", lastname: "Schepens",
+                tasklist: [
+                    "Hoofdbestuur",
+                    "Jeugdraadslid",
+                    "Websiteverantwoordelijke",
+                ],
+                avatar: "/assets/img/boardmember/2023/jarnoschepens.jpg",
+            },
+            {
+                firstname: "Jasmijn", lastname: "Schelfhout",
+                tasklist: [
+                    "Materiaalverantwoordelijke",
+                    "EHBO-verantwoordelijke",
+                    "Verjaardag- en prikbordverantwoordelijke",
+                ],
+                avatar: "/assets/img/boardmember/2023/jasmijnschelfhout.jpg",
+            },
+            {
+                firstname: "Lotte", lastname: "Jacobs",
+                tasklist: [
+                    "Secretaris",
+                    "PR-verantwoordelijke",
+                    "Sportfeestverantwoordelijke",
+                    "Foto-verantwoordelijke",
+                    "K-verantwoordelijke",
+                ],
+                avatar: "/assets/img/boardmember/2023/lottejacobs.jpg",
+            },
+            {
+                firstname: "Mabelle", lastname: "Smet",
+                tasklist: [
+                    "Technische dienst",
+                    "Redactie 'T Gemakske",
+                    "Kledijverantwoordelijke",
+                ],
+                avatar: "/assets/img/boardmember/2023/mabellesmet.jpg",
+            },
+            {
+                firstname: "Matthieu", lastname: "De Clercq",
+                tasklist: [
+                    "Sportfeestverantwoordelijke",
+                    "Foto-verantwoordelijke",
+                    "Archivaris",
+                    "Kamp- en weekendverantwoordelijke",
+                ],
+                avatar: "/assets/img/boardmember/2023/matthieudeclercq.jpg",
+            },
+            {
+                firstname: "Nicolaï", lastname: "Vieillevoye",
+                tasklist: [
+                    "Kassier",
+                    "Verhuurverantwoordelijke",
+                ],
+                avatar: "/assets/img/boardmember/2023/nicolaivieillevoye.jpg",
+            },
+            {
+                firstname: "Nina", lastname: "Selis",
+                tasklist: [
+                    "Hoofdleiding",
+                    "Jeugdraadslid",
+                ],
+                avatar: "/assets/img/boardmember/2023/ninaselis.jpg",
+            },
+            {
+                firstname: "Onno", lastname: "Van Aken",
+                tasklist: [
+                    "Redactie 'T Gemakske",
+                    "Kamp- en weekendverantwoordelijke",
+                    "Bestuursanimatieverantwoordelijke",
+                ],
+                avatar: "/assets/img/boardmember/2023/onnovanaken-zotte-foto.jpg",
+                /* avatar: "/assets/img/boardmember/2023/onnovanaken.jpg", */
+            },
+            {
+                firstname: "Robin", lastname: "Meerschaert",
+                tasklist: [
+                    "Jeugdraadslid",
+                    "Technische dienst",
+                    "Drank- en chipsverantwoordelijke",
+                    "Kamp- en weekendverantwoordelijke",
+                    "Bestuursanimatieverantwoordelijke",
+                ],
+                avatar: "/assets/img/boardmember/2023/robinmeerschaert-zotte-foto.jpg",
+                /* avatar: "/assets/img/boardmember/2023/robinmeerschaert.jpg", */
+            },
+            {
+                firstname: "Yoran", lastname: "Selis",
+                tasklist: [
+                    "Sportfeestverantwoordelijke",
+                    "Drank- en chipsverantwoordelijke",
+                    "EHBO-verantwoordelijke",
+                ],
+                avatar: "/assets/img/boardmember/2023/yoranselis.jpg",
+            },
+        ],
+        leden2022: [
+            {
                 firstname: "Amber",
                 lastname: "Van Moeseke",
                 tasklist: [
@@ -213,7 +348,8 @@ const siteConfig = {
                 ],
                 avatar: "/assets/img/boardmember/2022/yoranselis.jpg",
             },
-        ],
+        ]
+
     },
     evenementen: [
         {
