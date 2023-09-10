@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 export default async function page() {
     return <main className={"min-h-[calc(100svh-72px-56px)] print:min-h[100svh] flex flex-col gap-2"}>
         <section className={"container mx-auto px-2"}>
-            <BoardmembersGroup name={"Het volledige bestuur"} email={"allebestuur@kljstekene.be"} avatar={"/assets/img/boardmember/2022/groepsfoto.jpg"}/>
+            <BoardmembersGroup name={"Het volledige bestuur"} email={"allebestuur@kljstekene.be"} avatar={"/assets/img/boardmember/2023/groepsfoto.jpg"}/>
         </section>
         <section className={"container mx-auto grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 print:grid-cols-3 gap-2 px-2"}>
             {
