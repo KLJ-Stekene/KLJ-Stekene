@@ -110,8 +110,8 @@ const siteConfig = {
                     "Kamp- en weekendverantwoordelijke",
                     "Bestuursanimatieverantwoordelijke",
                 ],
-                avatar: "/assets/img/boardmember/2023/onnovanaken-zotte-foto.jpg",
-                /* avatar: "/assets/img/boardmember/2023/onnovanaken.jpg", */
+                avatar: "/assets/img/boardmember/2023/onnovanaken.jpg",
+                crazyAvatar: "/assets/img/boardmember/2023/onnovanaken-zotte-foto.jpg",
             },
             {
                 firstname: "Robin", lastname: "Meerschaert",
@@ -122,8 +122,8 @@ const siteConfig = {
                     "Kamp- en weekendverantwoordelijke",
                     "Bestuursanimatieverantwoordelijke",
                 ],
-                avatar: "/assets/img/boardmember/2023/robinmeerschaert-zotte-foto.jpg",
-                /* avatar: "/assets/img/boardmember/2023/robinmeerschaert.jpg", */
+                avatar: "/assets/img/boardmember/2023/robinmeerschaert.jpg",
+                crazyAvatar: "/assets/img/boardmember/2023/robinmeerschaert-zotte-foto.jpg",
             },
             {
                 firstname: "Yoran", lastname: "Selis",

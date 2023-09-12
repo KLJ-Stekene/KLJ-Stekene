@@ -7,11 +7,12 @@ interface BoardmemberProps {
     lastname: string;
     tasklist?: string[];
     avatar?: string | StaticImport;
+    crazyAvatar?: string | StaticImport;
 }
 
-export default async function Boardmember({firstname, lastname, avatar, tasklist}: BoardmemberProps) {
+export default async function Boardmember({firstname, lastname, tasklist, avatar, crazyAvatar}: BoardmemberProps) {
     return <div className={"flex flex-col gap-1"}>
-        {avatar && <Image src={avatar} alt={firstname + "'s gezicht"} className={"first:rounded-t-lg rounded-sm w-full"} width={380} height={380}/>}
+        <BoardmembersAvatar firstname={firstname} avatar={avatar} crazyAvatar={crazyAvatar}/>
         <div className={"flex flex-row gap-1"}>
             <h3 className={"bg-gray-100 dark:bg-gray-900 rounded-sm flex-grow p-2 text-xl font-semibold"}>{firstname} {lastname}</h3>
             <Link href={`mailto:${firstname}.${lastname}@kljstekene.be`} target={"_blank"}
@@ -29,4 +30,20 @@ interface BoardmembersTaskProps {
 
 async function BoardmembersTask({name}: BoardmembersTaskProps) {
     return <li className={"border-b-2 last:border-b-0 dark:border-gray-800 p-2 print:truncate"}>{name}</li>
+}
+
+interface BoardmembersAvatarProps {
+    firstname: string;
+    avatar?: string | StaticImport;
+    crazyAvatar?: string | StaticImport;
+}
+
+async function BoardmembersAvatar({firstname, avatar, crazyAvatar}: BoardmembersAvatarProps) {
+    if (!avatar) return undefined;
+
+    return <div className={"relative"}>
+        <Image src={avatar} alt={firstname + "'s gezicht"} width={380} height={380} className={"w-full rounded-t-lg rounded-sm top-0"}/>
+        {!!crazyAvatar && <Image src={crazyAvatar} alt={firstname + "'s zot gezicht"} width={380} height={380}
+                                 className={"w-full rounded-t-lg rounded-sm absolute top-0 opacity-0 hover:opacity-100 transition-all duration-300"}/>}
+    </div>
 }
