@@ -353,6 +353,43 @@ const siteConfig = {
     },
     evenementen: [
         {
+            URL: "Dessertquiz2023",
+            name: "Dessertquiz",
+            description: "Dit jaar is het de 11de editie van onze quiz met dessertenbuffet. In 9 rondes over meerdere onderwerpen wordt u algemene kennis getoetst. Tussen de rondes kan u geniet van onze heerlijke desserts. De groepjes bestaan uit 3 tot max. 4 personen. Het evenement vindt plaats op 18/11 om 19u30, in de refter van Toermalijn, Kerkstraat 12, 9190 Stekene.",
+            start: new Date("2023-11-18T19:30:00"),
+            end: new Date("2023-11-19T02:00:00"),
+            inIsInOutIsOut: false,
+            tickets: {
+                prijsVVK: 0,
+                prijsADK: 0,
+                onlineURL: "shop.kljstekene.be/dessertquiz",
+            },
+            entry: {
+                name: "Ingang",
+                adres: {
+                    streetAndNum: "Kerkstraat 12",
+                    postalCode: 9190,
+                    City: "Stekene",
+                },
+                iFrameURL: "https://www.google.com/maps/place/Kerkstraat+12,+9190+Stekene/@51.2075823,4.0368278,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3861309c30569:0x88659ab1ff72cab3!8m2!3d51.2075823!4d4.0394027!16s%2Fg%2F11f3hb10ph?entry=ttu",
+            },
+            location: {
+                name: "Refter Toermalijn",
+                adres: {
+                    streetAndNum: "Kerkstraat 12",
+                    postalCode: 9190,
+                    City: "Stekene",
+                },
+                iFrameURL: undefined,
+            },
+            images: {
+                logo: "/assets/img/events/2023/Dessertquiz/Flyer.jpg",
+                teaser: "/assets/img/events/2023/Dessertquiz/Flyer.jpg",
+                banner: "/assets/img/events/2023/Dessertquiz/Flyer.jpg",
+            },
+            socialMedia: [],
+        },
+        {
             URL: "Startactiviteit2023",
             name: "Startactiviteit",
             description: "Op 22 september start het nieuwe werkjaar van KLJ Stekene! Een +16 jeugdbeweging waar je elke vrijdag om 20u je helemaal kan uitleven. We zijn een zotte bende die klaarstaan om jullie te verwelkomen! Ben je geboren in 2008 (of vroeger)? Kom dan kennis maken op vrijdag 22 september en neem je vrienden mee! Kom jij met de grootste vriendengroep aan op onze startactiviteit? Dan winnen jullie een prijs! Ook altijd welkom op andere vrijdag om 20u aan ons lokaal.",
