@@ -385,7 +385,7 @@ const siteConfig = {
             },
             images: {
                 logo: "/assets/img/events/2023/Dessertquiz/Flyer.jpg",
-                teaser: "/assets/img/events/2023/Dessertquiz/Teaser.jpg",
+                teaser: "/assets/img/events/2023/Dessertquiz/Banner.jpg",
                 banner: "/assets/img/events/2023/Dessertquiz/Banner.jpg",
             },
             socialMedia: [],
