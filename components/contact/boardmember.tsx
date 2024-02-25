@@ -15,7 +15,7 @@ export default async function Boardmember({firstname, lastname, tasklist, avatar
         <BoardmembersAvatar firstname={firstname} avatar={avatar} crazyAvatar={crazyAvatar}/>
         <div className={"flex flex-row gap-1"}>
             <h3 className={"bg-gray-100 dark:bg-gray-900 rounded-sm flex-grow p-2 text-xl font-semibold"}>{firstname} {lastname}</h3>
-            <Link href={`mailto:${firstname}.${lastname}@kljstekene.be`} target={"_blank"}
+            <Link href={`mailto:${firstname.replace('ï', 'i')}.${lastname}@kljstekene.be`} target={"_blank"}
                   className={"bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-sm p-2 px-4 uppercase"}>Mail</Link>
         </div>
         {tasklist && <ul className={"bg-gray-100 dark:bg-gray-900 rounded-sm last:rounded-b-lg flex flex-col flex-grow gap-1"}>
