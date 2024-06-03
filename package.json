@@ -1,8 +1,41 @@
 {
   "name": "kljstekene",
   "version": "0.1.0",
+  "description": "The website. Nothing more; nothing less.",
+  "homepage": "https://kljstekene.be",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/KLJ-Stekene/KLJ-Stekene.git"
+  },
+  "bugs": {
+    "email": "allebestuur@kljstekene.be"
+  },
+  "author": {
+    "name": "Jens Penneman",
+    "email": "jenspenneman26@gmail.com",
+    "url": "https://jenspenneman.com"
+  },
+  "contributors": [
+    {
+      "name": "Tiebe Deweerdt",
+      "email": "tiebe.dw1@gmail.com"
+    },
+    {
+      "name": "Jarno Schepens",
+      "email": "jarno.schepens@kljstekene.be"
+    },
+    {
+      "name": "Feniks Van Vooren",
+      "email": "feniks.van.vooren@kljstekene.be"
+    }
+  ],
   "private": true,
   "type": "module",
+  "engineStrict": true,
+  "engines": {
+    "node": "^22.2.0",
+    "vscode": "^1.22.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
