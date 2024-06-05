@@ -22,48 +22,67 @@ npm run dev
 > This setup process is subject to change. For example, it may change if the repository is converted to a turbo-repo.
 
 
-## KLJ Stekene - URLs todo list
+## KLJ Stekene - URLs To-Do List
 
-- [ ] / 		--> Homepage
+### Homepage
 
-- [ ] /[LANG]/		--> i18n-Taalselectie
+- [ ] /         --> Homepage
 
-- [ ] /account/		--> Leden/ouders/sympathisanten en meer: algemene info en instellingen.
-- [ ] /account/authentication/	--> Login instellingen: email, wachtwoord, 2fa, passkey?
-- [ ] /account/billing/		--> Waar moeten facturen, openstaande rekeningen of dergelijke naartoe?
-- [ ] /account/invoices/		--> Openstaande en voorbije rekeningen/betalingen
-- [ ] /account/memberships/		--> Ingeschreven groepen: leeftijdsgroepen, activiteiten, sponsors en meer
+### Internationalization
 
-- [ ] /activities/		--> Een lijst van activiteiten voor leeftijdsgroepen (enkel zichtbaar voor leden, leiding en ouders)
-- [ ] /activities/?filters	--> Filter op leeftijdsgroepen, tijdsperiodes en meer
-- [ ] /activities/[UUID]/		--> Bekijk de details van een activiteit: MDX bericht, inschrijvingen, Leiding, gelinked aan evenement?, abnormale uren en meer
+- [ ] /[LANG]/  --> i18n - Language selection
 
-- [ ] /events/		--> Een lijst van alle evenementen die KLJ Stekene organiseert. Zowel privé als publiek. (Privé is dan enkel zichtbaar voor de aangeduide doelgroep)
-- [ ] /events/?filters	--> filter de lijst van evenementen
-- [ ] /events/[UUID]/			--> Dit zijn alle gegevens over een gegeven evenement + enkel zichtbare info voor bestuur + helpende handen inschrijvingen + etc.
+### Account
 
-- [ ] /sponsors/		--> Een lijst van alle sponsors
-- [ ] /sponsors/?filters	--> Filter op: Pakket/bedrag, evenement, naam en meer
-- [ ] /sponsors/[UUID]/		--> Toon de sponsors informatie, welke evenementen, en welke bedragen hij/zij/ze al bijgedragen heeft/hebben.
+- [ ] /account/  --> General information and settings for members, parents, and supporters.
+- [ ] /account/authentication/  --> Login settings: email, password, 2FA, passkey?
+- [ ] /account/billing/  --> Where invoices, outstanding bills, etc., should be sent.
+- [ ] /account/invoices/  --> Outstanding and past bills/payments.
+- [ ] /account/memberships/  --> Enrolled groups: age groups, activities, sponsors, and more.
 
-- [ ] /contact/		--> Een lijst van alle communicatievormen: Werkgroepen met een mail, Individueel bestuur, per evenement
-- [ ] /contact/governance/		--> Een lijst van bestuursleden
-- [ ] /contact/governance/?filters	--> Filter de lijst op basis van naam, werkgroep, evenement...
-- [ ] /contact/governance/[UUID]/		--> Een specifiek bestuurslid: email, werkgroepen, evenementen, taken, leeftijdsgroepen
-- [ ] /contact/commitees/		--> Een lijst van werkgroepen en taakgroepen binnenin KLJ Stekene en de evenementen
-- [ ] /contact/commitees/?filters	--> Filter op basis van leiding, evenementen en meer
+### Activities
 
+- [ ] /activities/  --> A list of activities for age groups (visible only to members, leaders, and parents).
+- [ ] /activities/?filters  --> Filter by age groups, time periods, and more.
+- [ ] /activities/[UUID]/  --> View activity details: MDX message, registrations, leaders, linked to an event?, abnormal hours, and more.
 
-- [ ] /dashboard/		--> Een dashboard voor de leiding om alles te beheren. Deze startpagina bevat niets specifieks (select something message)
+### Events
 
-- [ ] /dashboard/people/		--> Een lijst van alle mensen verbonden met KLJ Stekene: Leden, Ouders, Sponsor-contacten en meer
-- [ ] /dashboard/people/?filters	--> Filter op leden, activiteiten en meer
-- [ ] /dashboard/people/[UUID]/		--> Toon een persoon zijn info, afhankelijk van de vorm van connectie wordt er hier een ander menu getoont
-- [ ] /dashboard/people/[UUID]/edit/			--> Bewerk de informatie van een persoon
+- [ ] /events/  --> A list of all events organized by KLJ Stekene. Both private and public (Private is only visible to the designated target group).
+- [ ] /events/?filters  --> Filter the list of events.
+- [ ] /events/[UUID]/  --> All information about a specific event + visible information for the board + volunteer registrations + etc.
 
-- [ ] /dashboard/activities/		--> Een lijst van activiteiten
-- [ ] /dashboard/activities/?filters	--> Filter op basis van een leeftijdsgroep
-- [ ] /dashboard/activities/[UUID]/		--> Toon alle informatie over een activiteit, maar direct bewerkbaar.
+### Sponsors
+
+- [ ] /sponsors/  --> A list of all sponsors.
+- [ ] /sponsors/?filters  --> Filter by: package/amount, event, name, and more.
+- [ ] /sponsors/[UUID]/  --> Show sponsor information, which events, and the amounts they have contributed.
+
+### Contact
+
+- [ ] /contact/  --> A list of all communication forms: working groups with an email, individual board members, per event.
+- [ ] /contact/governance/  --> A list of board members.
+- [ ] /contact/governance/?filters  --> Filter the list by name, working group, event...
+- [ ] /contact/governance/[UUID]/  --> A specific board member: email, working groups, events, tasks, age groups.
+- [ ] /contact/committees/  --> A list of working groups and task groups within KLJ Stekene and the events.
+- [ ] /contact/committees/?filters  --> Filter by leaders, events, and more.
+
+### Dashboard
+
+- [ ] /dashboard/  --> A dashboard for leaders to manage everything. This homepage contains nothing specific (select something message).
+
+#### People Management
+
+- [ ] /dashboard/people/  --> A list of all people connected with KLJ Stekene: members, parents, sponsor contacts, and more.
+- [ ] /dashboard/people/?filters  --> Filter by members, activities, and more.
+- [ ] /dashboard/people/[UUID]/  --> Show a person's information, depending on the form of connection, a different menu is shown.
+- [ ] /dashboard/people/[UUID]/edit/  --> Edit a person's information.
+
+#### Activities Management
+
+- [ ] /dashboard/activities/  --> A list of activities.
+- [ ] /dashboard/activities/?filters  --> Filter by age group.
+- [ ] /dashboard/activities/[UUID]/  --> Show all information about an activity, but directly editable.
 
 > [!NOTE]
 > More to come!
