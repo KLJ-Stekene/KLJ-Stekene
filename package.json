@@ -42,7 +42,9 @@
     "npm": ">=10"
   },
   "scripts": {
+    "predev": "npm run -s db:local:start",
     "dev": "next dev",
+    "postdev": "npm run -s db:local:stop",
     "build": "next build",
     "start": "next start",
     "prepare": "husky",
@@ -50,7 +52,9 @@
     "lint:fix": "eslint . --fix",
     "lint:next": "next lint",
     "lint:staged": "lint-staged",
-    "lint:commit": "commitlint --strict --edit"
+    "lint:commit": "commitlint --strict --edit",
+    "db:local:start": "supabase start",
+    "db:local:stop": "supabase stop --no-backup"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
