@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { inter } from "@/components/fonts";
+import Hosts from "@/components/Hosts";
 import Providers from "@/components/Providers";
 import Tools from "@/components/Tools";
 import { cn } from "@/utils/tailwindcss/mergeClassNames";
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(inter.variable, "antialiased transform-gpu")}>
         <Providers>{children}</Providers>
+        <Hosts />
         <Tools />
       </body>
     </html>
