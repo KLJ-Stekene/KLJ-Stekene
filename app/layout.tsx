@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.variable)}>
+      <body className={cn(inter.variable, "antialiased transform-gpu")}>
         {children}
         <Tools />
       </body>
