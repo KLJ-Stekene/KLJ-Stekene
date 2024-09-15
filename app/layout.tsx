@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { inter } from "@/components/fonts";
+import Tools from "@/components/Tools";
 import { cn } from "@/lib/utils";
 import React from "react";
 
@@ -18,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.variable)}>{children}</body>
+      <body className={cn(inter.variable)}>
+        {children}
+        <Tools />
+      </body>
     </html>
   );
 }
