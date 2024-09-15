@@ -1,6 +1,6 @@
 "use client"
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/utils/tailwindcss/mergeClassNames"
 import { OTPInput, OTPInputContext } from "input-otp"
 import { Dot } from "lucide-react"
 import React from "react"

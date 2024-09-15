@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/atoms/button"
-import { cn } from "@/lib/utils"
+import { cn } from "@/utils/tailwindcss/mergeClassNames"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react"

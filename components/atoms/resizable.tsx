@@ -1,6 +1,6 @@
 "use client"
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/utils/tailwindcss/mergeClassNames"
 import { GripVertical } from "lucide-react"
 import React from "react"
 import * as ResizablePrimitive from "react-resizable-panels"

@@ -1,6 +1,6 @@
 "use client"
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/utils/tailwindcss/mergeClassNames"
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area"
 import React from "react"
 

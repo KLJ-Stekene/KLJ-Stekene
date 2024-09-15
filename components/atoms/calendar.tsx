@@ -1,7 +1,7 @@
 "use client"
 
 import { buttonVariants } from "@/components/atoms/button"
-import { cn } from "@/lib/utils"
+import { cn } from "@/utils/tailwindcss/mergeClassNames"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import React from "react"
 import { DayPicker } from "react-day-picker"

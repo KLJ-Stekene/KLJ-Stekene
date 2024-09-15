@@ -1,6 +1,6 @@
 "use client"
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/utils/tailwindcss/mergeClassNames"
 import * as AvatarPrimitive from "@radix-ui/react-avatar"
 import React from "react"
 

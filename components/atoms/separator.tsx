@@ -1,6 +1,6 @@
 "use client"
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/utils/tailwindcss/mergeClassNames"
 import * as SeparatorPrimitive from "@radix-ui/react-separator"
 import React from "react"
 

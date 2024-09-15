@@ -1,7 +1,7 @@
 "use client"
 
 import { Label } from "@/components/atoms/label"
-import { cn } from "@/lib/utils"
+import { cn } from "@/utils/tailwindcss/mergeClassNames"
 import * as LabelPrimitive from "@radix-ui/react-label"
 import { Slot } from "@radix-ui/react-slot"
 import React from "react"

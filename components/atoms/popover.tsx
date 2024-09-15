@@ -1,6 +1,6 @@
 "use client"
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/utils/tailwindcss/mergeClassNames"
 import * as PopoverPrimitive from "@radix-ui/react-popover"
 import React from "react"
 

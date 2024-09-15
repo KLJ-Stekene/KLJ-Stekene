@@ -1,5 +1,5 @@
 import { ButtonProps, buttonVariants } from "@/components/atoms/button"
-import { cn } from "@/lib/utils"
+import { cn } from "@/utils/tailwindcss/mergeClassNames"
 import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react"
 import React from "react"
 

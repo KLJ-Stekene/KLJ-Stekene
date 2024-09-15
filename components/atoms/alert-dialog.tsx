@@ -1,7 +1,7 @@
 "use client"
 
 import { buttonVariants } from "@/components/atoms/button"
-import { cn } from "@/lib/utils"
+import { cn } from "@/utils/tailwindcss/mergeClassNames"
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog"
 import React from "react"
 
