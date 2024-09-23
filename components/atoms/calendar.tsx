@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { buttonVariants } from "@/components/atoms/button"
-import { cn } from "@/utils/tailwindcss/mergeClassNames"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import React from "react"
-import { DayPicker } from "react-day-picker"
+import { buttonVariants } from "@/components/atoms/button";
+import { cn } from "@/utils/tailwindcss/mergeClassNames";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import React from "react";
+import { DayPicker } from "react-day-picker";
 
-export type CalendarProps = React.ComponentProps<typeof DayPicker>
+export type CalendarProps = React.ComponentProps<typeof DayPicker>;
 
 function Calendar({
   className,
@@ -52,14 +52,18 @@ function Calendar({
         ...classNames,
       }}
       components={{
-        IconLeft: ({ ...props }) => <ChevronLeft className="h-4 w-4" {...props} />,
-        IconRight: ({ ...props }) => <ChevronRight className="h-4 w-4" {...props} />,
+        Chevron: ({ orientation, ...props }) =>
+          orientation === "left" ? (
+            <ChevronLeft {...props} />
+          ) : (
+            <ChevronRight {...props} />
+          ),
       }}
       showOutsideDays={showOutsideDays}
       {...props}
     />
-  )
+  );
 }
-Calendar.displayName = "Calendar"
+Calendar.displayName = "Calendar";
 
-export { Calendar }
+export { Calendar };
